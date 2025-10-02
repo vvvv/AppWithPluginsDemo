@@ -15,3 +15,7 @@ The main files are
 On the hosting side only `entrypoint-production.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
 
 On the plugin side the `plugin*.vl` get exported and their resulting dll needs to be manually copied to the before mentioned `plugins` folder.
+
+## Future work
+Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext).
+If that works we could add a file watcher on the plugins directory.
