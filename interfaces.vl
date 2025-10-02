@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="KQ43dw4BoWUL70NJkjOc8v" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="NMY4kd39pb4LkjSI4pVcoc">
+    <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ IPlugin ************************
+
+-->
+      <Node Name="IPlugin" Bounds="403,280" Id="M24RkA98eaPO4aeKnUqyfc">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="InterfaceDefinition" Name="Interface" />
+        </p:NodeReference>
+        <Patch Id="AaTOuJicttKQbqZVaFBrmU">
+          <Canvas Id="TJchhVGRuGrNdTedn9Uv6t" CanvasType="Group">
+            <ControlPoint Id="TeLVOgIEh3SNRF4uxOXYo9" Bounds="513,382" />
+          </Canvas>
+          <ProcessDefinition Id="LeJd09iSHLSLZLiG3HoWex" IsHidden="true">
+            <Fragment Id="SbR9XxlN9FdPp23blAGYTO" Patch="TSp6DJ4aVjpLqNB1jZj3yN" />
+          </ProcessDefinition>
+          <Link Id="LISVhlK2M56NSfn3FAR78b" Ids="TeLVOgIEh3SNRF4uxOXYo9,VK21FvzPU7PNFPdxOgXgk2" IsHidden="true" />
+          <Patch Id="TSp6DJ4aVjpLqNB1jZj3yN" Name="Update">
+            <Pin Id="VK21FvzPU7PNFPdxOgXgk2" Name="Layer" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                <Choice Kind="TypeFlag" Name="Layer" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MyCVnXB8ldYPr0sZe24RIu">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PEn97TWLrC8LjluhOQvZBT">
+        <Canvas Id="J3ldeyT58dpNO4hoRA5TXS" CanvasType="Group" />
+        <Patch Id="L6nLLJbETNjPQ7KB18sbPJ" Name="Create" />
+        <Patch Id="GijRKzZRkAJOTUKEJ5H9RN" Name="Update" />
+        <ProcessDefinition Id="SIzogpknDaELL9HyPBmXoi">
+          <Fragment Id="AkXVaFHPD1VPMxpLWFU86k" Patch="L6nLLJbETNjPQ7KB18sbPJ" Enabled="true" />
+          <Fragment Id="AeevBxCOi7lMYGkug4BkIl" Patch="GijRKzZRkAJOTUKEJ5H9RN" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="IKKtZhslJYjN2S9ptpTdRQ" Location="VL.Skia" IsForward="true" Version="2025.7.0" />
+</Document>

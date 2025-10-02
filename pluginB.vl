@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="ACftFAVa3yLPdHxLvASmvD" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2023.5.2" />
+  <Patch Id="NMY4kd39pb4LkjSI4pVcoc">
+    <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ PluginB ************************
+
+-->
+      <Node Name="PluginB" Bounds="383,257" Id="MZEVvnFnwhVLPxM94t8gD9">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+          <Choice Kind="ClassDefinition" Name="Class" />
+        </p:NodeReference>
+        <p:Interfaces>
+          <TypeReference LastCategoryFullName="Main" LastDependency="interfaces.vl">
+            <Choice Kind="InterfaceTypeFlag" Name="IPlugin" />
+          </TypeReference>
+        </p:Interfaces>
+        <Patch Id="FNfy3fK2U6ZOoj6g0XXSnN">
+          <Canvas Id="NsEzfl6PCvVOV8oL66sfnf" CanvasType="Group">
+            <Node Bounds="457,346,105,19" Id="QPs9xdhwvUBN7rhofakptZ">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers.Text" LastDependency="interfaces.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Text" />
+              </p:NodeReference>
+              <Pin Id="IAPdA4fSob9Mgx1UxHUlhz" Name="Position" Kind="InputPin" />
+              <Pin Id="AFAbYEQvPziNMffWtWhfvX" Name="Size" Kind="InputPin" />
+              <Pin Id="F2YLCgn6rD9MiHcMyFVSjd" Name="Anchor" Kind="InputPin" />
+              <Pin Id="MEZGFil4FGsNJX56l1fjii" Name="Text" Kind="InputPin" DefaultValue="Hello from A" />
+              <Pin Id="L1gZlvjF4nPMSoI3Fl9TtA" Name="Paint" Kind="InputPin" />
+              <Pin Id="QWlJwR2EtD7Mn2oQGD1J6E" Name="Enabled" Kind="InputPin" />
+              <Pin Id="VuyyYjJJooRPBIPuAn0c9I" Name="Output" Kind="OutputPin" />
+              <Pin Id="NfyGzoHdjBxOR3hAeP2PNp" Name="Baseline Position" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="M8jQXvzoyjuNa0bk4RjQRg" Bounds="458,431" />
+            <Pad Id="JXPw6J5TNkENNzNXpMaF7U" Comment="Text" Bounds="519,300,66,15" ShowValueBox="true" isIOBox="true" Value="Hello from B">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+          </Canvas>
+          <ProcessDefinition Id="DTzP5v7XtTkO1tS7qNDol1" IsHidden="true">
+            <Fragment Id="FrSNoar10E1LmLBnmWJ0Tv" Patch="MQFRETANErPQLza8AzJcxp" Enabled="true" />
+            <Fragment Id="TCrNPNmcsrVOJnqNTvX7Hv" Patch="PHvI7Qu43jUONisfojIn2S" />
+          </ProcessDefinition>
+          <Patch Id="MQFRETANErPQLza8AzJcxp" Name="Create" />
+          <Patch Id="PHvI7Qu43jUONisfojIn2S" Name="Update">
+            <Pin Id="EnTd3Vjkc6XOTFm4fI7562" Name="Layer" Kind="OutputPin" />
+          </Patch>
+          <Link Id="MbV8IPXzQxrQFby2KWROzr" Ids="VuyyYjJJooRPBIPuAn0c9I,M8jQXvzoyjuNa0bk4RjQRg" />
+          <Link Id="Vwi113bkRv3NOWTQULBH4f" Ids="M8jQXvzoyjuNa0bk4RjQRg,EnTd3Vjkc6XOTFm4fI7562" IsHidden="true" />
+          <Link Id="DJX3PlyHSnCMX1UHRL6R7u" Ids="JXPw6J5TNkENNzNXpMaF7U,MEZGFil4FGsNJX56l1fjii" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MyCVnXB8ldYPr0sZe24RIu">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PEn97TWLrC8LjluhOQvZBT">
+        <Canvas Id="J3ldeyT58dpNO4hoRA5TXS" CanvasType="Group">
+          <Pad Id="K5NkEj1SOC3K9nvRLocWuu" Bounds="441,274,124,19" ShowValueBox="true" isIOBox="true" Value="Dummy Entry Point">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="L6nLLJbETNjPQ7KB18sbPJ" Name="Create" />
+        <Patch Id="GijRKzZRkAJOTUKEJ5H9RN" Name="Update" />
+        <ProcessDefinition Id="SIzogpknDaELL9HyPBmXoi">
+          <Fragment Id="AkXVaFHPD1VPMxpLWFU86k" Patch="L6nLLJbETNjPQ7KB18sbPJ" Enabled="true" />
+          <Fragment Id="AeevBxCOi7lMYGkug4BkIl" Patch="GijRKzZRkAJOTUKEJ5H9RN" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="MQRUkT2L6PTMp89GCYo40R" Location="./interfaces.vl" />
+</Document>

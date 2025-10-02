@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="B8BilwmWrTXNfJFsOlwymW" LanguageVersion="2025.7.0" Version="0.128">
+  <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
+    <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="CxDCXhdaEjdNnwOiEpWcnb">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Osxg9b2yvgVNk8lZUzOdcc">
+        <Canvas Id="BMOEJixDGh8Ov0rWsKQl0q" CanvasType="Group">
+          <Node Bounds="414,280,90,19" Id="S5hmoaUYnvCPylpiaodKRn">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PluginSelectorUI" />
+            </p:NodeReference>
+            <Pin Id="Ey9NZbSVhUPOYno5jefFMz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ULB6GYkgDCCNpxrDf52yzP" Name="Input" Kind="InputPin" />
+          </Node>
+          <Node Bounds="414,210,90,19" Id="BEvO8y7dJ4JQQRsarSqdT5">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="AvailablePlugins" />
+            </p:NodeReference>
+            <Pin Id="MgmZAjNVA9yPrS9JGbTa60" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IU0wZ4GrCg6NzSz6xOWF8d" Name="Reload" Kind="InputPin" />
+            <Pin Id="KBVowLjGrlJPQ80IhJrdWT" Name="Plugins Folder" Kind="InputPin" />
+            <Pin Id="DaOe02ygHwnMj4bjLLmDDa" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="231,151,497,20" ShowValueBox="true" isIOBox="true" Value="This file references host.vl and arbitrary plugins directly in order to work on them">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="Dqy8GETm27hM0TVd6g9x7I" Name="Create" />
+        <Patch Id="OYsCWa783aMNnmq1JPhVfH" Name="Update" />
+        <ProcessDefinition Id="IlK7X24qnYpPhhXaXlmLbk">
+          <Fragment Id="GkmeWrnImBjOzaJGDAqSSu" Patch="Dqy8GETm27hM0TVd6g9x7I" Enabled="true" />
+          <Fragment Id="V46m5KEtH24LOM9T5uvb1w" Patch="OYsCWa783aMNnmq1JPhVfH" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="CMOot88PUQQOADO8yvndr8" Ids="DaOe02ygHwnMj4bjLLmDDa,ULB6GYkgDCCNpxrDf52yzP" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="EhoG6RIuq2fL2qA6WR3d6n" Location="./host.vl" />
+  <DocumentDependency Id="SrDAa0dpyg8NUSiK4IG9bz" Location="./pluginA.vl" />
+</Document>
