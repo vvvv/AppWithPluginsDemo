@@ -23,6 +23,7 @@ On the plugin side the `plugin*.vl` get exported and their resulting dll needs t
 - Native dlls?
 - A plugin most likely consist of more than just the plugin.dll. ie. consider having plugin folders instead of just the .dlls
 - Path references (relative to doc, vs. .exe) -> consider AssemblyPath a la ApplicationPath
+- add script to build plugin.dlls with vvvvc
 
 ## Do's and Don'ts
 - how to handle issues with dependencies from different vvvv versions (one that exports the host, one that plugin-developers are using)
