@@ -18,6 +18,15 @@ On the plugin side the `plugin*.vl` get exported and their resulting dll needs t
 
 ## Known Issues
 - You can not add a reference to an exported plugin.dll to your `entrypoint-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
+- Stride asets?
+- VST?
+- Native dlls?
+- A plugin most likely consist of more than just the plugin.dll. ie. consider having plugin folders instead of just the .dlls
+- Path references (relative to doc, vs. .exe) -> consider AssemblyPath a la ApplicationPath
+
+## Do's and Don'ts
+- how to handle issues with dependencies from different vvvv versions (one that exports the host, one that plugin-developers are using)
+- also: different versions of nugets that plugins are using 
 
 ## Future work
 Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application.
