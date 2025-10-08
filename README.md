@@ -9,7 +9,7 @@ The main files are
 - `pluginB.vl` contains a class `PluginB` implementing `IPlugin` by rendering "Hello from B".
 - `host.vl` contains host related logic and must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
 - `entrypoint-production.vl` references `host.vl` and is intended for export.
-- `entrypoint-develop.vl` like above but also references any plugins directly to be able to work on them - this is needed as long as we lack dynamic loading of VL files during runtime.
+- `entrypoint-develop.vl` like above but also references any plugins directly to be able to work on them
 
 ## Export
 On the hosting side only `entrypoint-production.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
