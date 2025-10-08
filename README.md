@@ -16,6 +16,8 @@ On the hosting side only `entrypoint-production.vl` is intended to be exported. 
 
 On the plugin side the `plugin*.vl` get exported and their resulting dll needs to be manually copied to the before mentioned `plugins` folder.
 
+## Known Issues
+- You can not add a reference to an exported plugin.dll to your `entrypoint-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
+
 ## Future work
-Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext).
-If that works we could add a file watcher on the plugins directory.
+Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application.
