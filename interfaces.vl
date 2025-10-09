@@ -5,16 +5,17 @@
     <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
 
-    ************************ IPlugin ************************
+    ************************ ILayerPlugin ************************
 
 -->
-      <Node Name="IPlugin" Bounds="403,280" Id="M24RkA98eaPO4aeKnUqyfc">
+      <Node Name="ILayerPlugin" Bounds="403,280" Id="M24RkA98eaPO4aeKnUqyfc">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="InterfaceDefinition" Name="Interface" />
         </p:NodeReference>
         <Patch Id="AaTOuJicttKQbqZVaFBrmU">
           <Canvas Id="TJchhVGRuGrNdTedn9Uv6t" CanvasType="Group">
             <ControlPoint Id="TeLVOgIEh3SNRF4uxOXYo9" Bounds="513,382" />
+            <ControlPoint Id="LvPzvPKs6sVPQNWnRX2GsB" Bounds="513,241" />
           </Canvas>
           <ProcessDefinition Id="LeJd09iSHLSLZLiG3HoWex" IsHidden="true">
             <Fragment Id="SbR9XxlN9FdPp23blAGYTO" Patch="TSp6DJ4aVjpLqNB1jZj3yN" />
@@ -26,7 +27,13 @@
                 <Choice Kind="TypeFlag" Name="Layer" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="E17nNTk9YhuLJB1ly1v5Qn" Name="Paint" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
+                <Choice Kind="TypeFlag" Name="SkiaPaint" />
+              </p:TypeAnnotation>
+            </Pin>
           </Patch>
+          <Link Id="PCgJubzTkCGLU6z9dEvlgy" Ids="E17nNTk9YhuLJB1ly1v5Qn,LvPzvPKs6sVPQNWnRX2GsB" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

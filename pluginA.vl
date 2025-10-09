@@ -14,7 +14,7 @@
         </p:NodeReference>
         <p:Interfaces>
           <TypeReference LastCategoryFullName="Main" LastDependency="interfaces.vl">
-            <Choice Kind="InterfaceTypeFlag" Name="IPlugin" />
+            <Choice Kind="InterfaceTypeFlag" Name="ILayerPlugin" />
           </TypeReference>
         </p:Interfaces>
         <Patch Id="FJCzpDbVH0uMzZfMjxSImw">
@@ -48,6 +48,7 @@
           <Patch Id="JkkUunNaK3oPADH28hVHh2" Name="Create" />
           <Patch Id="LffIK32vaeQLzF1F36FW93" Name="Update">
             <Pin Id="T2FFdUDJjXFONcxg5Ehn45" Name="Layer" Kind="OutputPin" />
+            <Pin Id="LDwrELnbQeJPuPLr9ZDHsJ" Name="Paint" Kind="InputPin" />
           </Patch>
           <Link Id="UIhIcFRRHVoLBlayoYI8hc" Ids="AhqYYo2rorwLEEie8eX1J8,IOpQUkbCYscLOHND0ZCqbw" />
           <Link Id="PC7yxrcNEtbQSE3twlSwkw" Ids="IOpQUkbCYscLOHND0ZCqbw,T2FFdUDJjXFONcxg5Ehn45" IsHidden="true" />
