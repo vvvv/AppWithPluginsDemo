@@ -8,7 +8,7 @@
     ************************ ILayerPlugin ************************
 
 -->
-      <Node Name="ILayerPlugin" Bounds="403,280" Id="M24RkA98eaPO4aeKnUqyfc">
+      <Node Name="ILayerPlugin" Bounds="395,290" Id="M24RkA98eaPO4aeKnUqyfc">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="InterfaceDefinition" Name="Interface" />
         </p:NodeReference>
@@ -36,6 +36,123 @@
           <Link Id="PCgJubzTkCGLU6z9dEvlgy" Ids="E17nNTk9YhuLJB1ly1v5Qn,LvPzvPKs6sVPQNWnRX2GsB" IsHidden="true" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ ITextureFXPlugin ************************
+
+-->
+      <Node Name="ITextureFXPlugin" Bounds="395,370" Id="RxDQAKZ0CS5M6nubc7dwfu">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <Patch Id="G1xh9eB3YfQOdUOC41Ydt1">
+          <Canvas Id="GbTj5NS3pZOOPNMhtnS12Z" CanvasType="Group">
+            <ControlPoint Id="OrkG5pWAD4pPU5V1tFJEe0" Bounds="419,460" />
+            <ControlPoint Id="LQ1yLKOMEZuMWQDK6Rvz2j" Bounds="419,340" />
+          </Canvas>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="HK1BE8EOTl8NzgeDuELapv" IsHidden="true">
+            <Fragment Id="I82o0UfItN6MtayCLFAojV" Patch="LlcFIS9axujNjOLYzSTZ8W" />
+          </ProcessDefinition>
+          <Patch Id="LlcFIS9axujNjOLYzSTZ8W" Name="Update">
+            <Pin Id="EgNmX7GdFJxNxiEGyvUQCJ" Name="Output" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Stride.API.Graphics" LastDependency="VL.Stride.TextureFX.vl">
+                <Choice Kind="TypeFlag" Name="Texture" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Ih7XHK5eUaHNqfbhdX9eOz" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Stride.API.Graphics" LastDependency="VL.Stride.TextureFX.vl">
+                <Choice Kind="TypeFlag" Name="Texture" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="U2KWjUmsDUcMYe3eL7BrD7" Ids="OrkG5pWAD4pPU5V1tFJEe0,EgNmX7GdFJxNxiEGyvUQCJ" IsHidden="true" />
+          <Link Id="VMvl8Yitia1Ne33TlIdllw" Ids="Ih7XHK5eUaHNqfbhdX9eOz,LQ1yLKOMEZuMWQDK6Rvz2j" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ IAudioPlugin ************************
+
+-->
+      <Node Name="IAudioPlugin" Bounds="395,451" Id="MJXZuAtKmdlOBpBHLoDcr6">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <Patch Id="Sq3gxINqV2lMVvTM6qtfl7">
+          <Canvas Id="FuDR2qilLaYP1s1OuOGPQ3" CanvasType="Group">
+            <ControlPoint Id="S32GwCgZd1GLUsb7vQiA8n" Bounds="561,440" />
+            <ControlPoint Id="T1SGmEIBVjEP3VjVV4ADrw" Bounds="663,439" />
+            <ControlPoint Id="FbKr56KByq9NDlcFyO89f4" Bounds="418,530" />
+            <ControlPoint Id="LEWQMbz9VY5NVsVOQUNIpV" Bounds="561,530" />
+            <ControlPoint Id="BqXx9isKlHRNhSelFaY6kL" Bounds="656,530" />
+          </Canvas>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="NQmmWOqhNHOPq4iOwcWVJ0" IsHidden="true">
+            <Fragment Id="Ia75U1xQoRTOGbv5LxCb3B" Patch="P55j1095A1vMWDBiXxvuBI" />
+          </ProcessDefinition>
+          <Patch Id="P55j1095A1vMWDBiXxvuBI" Name="Update">
+            <Pin Id="JY9D5rUcONqPpMaQH8imzO" Name="Audio In" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="IReadOnlyList" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Audio" LastDependency="VL.Audio.VST.vl">
+                    <Choice Kind="TypeFlag" Name="AudioSignal" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OWvPeATIIVbN9TPWIsBh4e" Name="Midi In" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Observable" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="MidiMessage" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="AuEdiqymihNNPFAZ9mFgrU" Name="Instrument" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HiUf4djyEPTOMVpKdhGsg5" Name="Audio Out" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="IReadOnlyList" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Audio" LastDependency="VL.Audio.VST.vl">
+                    <Choice Kind="TypeFlag" Name="AudioSignal" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="KYgcR0E9PxPNGUt8ShMbzU" Name="Midi Out" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Observable" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="MidiMessage" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="PXtSahlBuL5L00chvu0v0f" Ids="JY9D5rUcONqPpMaQH8imzO,S32GwCgZd1GLUsb7vQiA8n" IsHidden="true" />
+          <Link Id="N9PHRV489rkOFuEIB0Ic3g" Ids="OWvPeATIIVbN9TPWIsBh4e,T1SGmEIBVjEP3VjVV4ADrw" IsHidden="true" />
+          <Link Id="P0pfqNybOiyNgdKc0m5BLZ" Ids="FbKr56KByq9NDlcFyO89f4,AuEdiqymihNNPFAZ9mFgrU" IsHidden="true" />
+          <Link Id="K4znavmiQbLNzwsK6upcz6" Ids="LEWQMbz9VY5NVsVOQUNIpV,HiUf4djyEPTOMVpKdhGsg5" IsHidden="true" />
+          <Link Id="Qh61tyTEby1N7tfH8UPMZ5" Ids="BqXx9isKlHRNhSelFaY6kL,KYgcR0E9PxPNGUt8ShMbzU" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -59,4 +176,8 @@
     </Node>
   </Patch>
   <NugetDependency Id="IKKtZhslJYjN2S9ptpTdRQ" Location="VL.Skia" IsForward="true" Version="2025.7.0" />
+  <NugetDependency Id="MuqJprTlNPKNkZXaizZ9m7" Location="VL.Stride.TextureFX" Version="2025.7.0" />
+  <NugetDependency Id="QkyrOFwyvsMLVNCohm42SR" Location="VL.Audio.VST" Version="0.1.7-alpha" />
+  <NugetDependency Id="OB1EXkMZK9hNWGERiqrAqp" Location="VL.IO.Midi" Version="2.0.4" />
+  <NugetDependency Id="K1OlmJpHwRvPi29zf8pH3v" Location="VL.Audio" Version="1.9.14" />
 </Document>
