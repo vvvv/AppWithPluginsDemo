@@ -106,4 +106,5 @@
   <NugetDependency Id="TGbGH1sIHrpNnhdetYmZom" Location="VL.ImGui.Stride" Version="2025.7.0" />
   <DocumentDependency Id="EjhI59R9EanOUYwCWadaYe" Location="./TAL-NoiseMaker.vl" />
   <DocumentDependency Id="VByyBLZhq6pOALgULVsf9H" Location="./Ana.vl" />
+  <DocumentDependency Id="I9i4nmSnm47NPoNjvZtQi1" Location="./Posterize/Posterize.vl" />
 </Document>
