@@ -48,7 +48,7 @@
             </p:NodeReference>
             <Pin Id="KEjJ9jR0cQpNoBPmu62c1R" Name="Default" Kind="OutputPin" />
           </Node>
-          <Node Bounds="275,800,145,19" Id="DiVx4vgQs7oPt7GohDB2YA">
+          <Node Bounds="275,750,145,19" Id="DiVx4vgQs7oPt7GohDB2YA">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="interfaces.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -75,7 +75,7 @@
             <Pin Id="UwqoKBCH7Y9PcWxsmELZYp" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="UxIzmcvwBBZNJNxChFV7ix" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="275,457,383,192" Id="NyqU16hZF9gNssv43V5l5a">
+          <Node Bounds="275,457,308,192" Id="NyqU16hZF9gNssv43V5l5a">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layer" LastDependency="VL.ImGui.Skia.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImGui" />
@@ -138,7 +138,7 @@
                 <Pin Id="TXHpLZtrSzSO2RT9BfFo8H" Name="Spacing" Kind="InputPin" />
                 <Pin Id="LFQbOhIKB2YMHBpOTY6xIP" Name="Context" Kind="OutputPin" />
               </Node>
-              <Node Bounds="521,610,125,19" Id="KmKu3dxBnW1OzNKATqnAIQ">
+              <Node Bounds="446,610,125,19" Id="KmKu3dxBnW1OzNKATqnAIQ">
                 <p:NodeReference LastCategoryFullName="System.Logging.LogUI.Widgets" LastDependency="VL.LogView.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="LogUI (Widget)" />
@@ -154,7 +154,7 @@
               </Node>
             </Patch>
           </Node>
-          <Node Bounds="295,700,65,19" Id="VL8Fhg8sojJOljBZZWRNVJ">
+          <Node Bounds="295,670,65,19" Id="VL8Fhg8sojJOljBZZWRNVJ">
             <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Application" NeedsToBeDirectParent="true">
@@ -164,7 +164,7 @@
             </p:NodeReference>
             <Pin Id="Mq1Fk9kx90pP8aWr6UgbYs" Name="Is Exported" Kind="OutputPin" />
           </Node>
-          <Node Bounds="295,760,45,19" Id="HLSjeNUTBJKOudBsvwcbCs">
+          <Node Bounds="295,710,45,19" Id="HLSjeNUTBJKOudBsvwcbCs">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Switch (Boolean)" />
@@ -174,7 +174,7 @@
             <Pin Id="VEEJqNNkEyFNofCvlIpmS4" Name="Input 2" Kind="InputPin" DefaultValue="exported app" />
             <Pin Id="GqTx6tyteHJMmQPqUQtH0H" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="452,230,65,19" Id="OKjuDBPfytDOMUZFIEetjo">
+          <Node Bounds="452,240,65,19" Id="OKjuDBPfytDOMUZFIEetjo">
             <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Application" NeedsToBeDirectParent="true">
@@ -210,7 +210,7 @@
             <Pin Id="G8o2EWYTTwxOcC7yyFKpx2" Name="Folder" Kind="InputPin" />
             <Pin Id="LGo8b3cLdOmQIPt8AW2NOo" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="659,260,87,19" Id="LUG9Hl2Jv9JNNDKqsH4OXo">
+          <Node Bounds="656,240,87,19" Id="LUG9Hl2Jv9JNNDKqsH4OXo">
             <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
@@ -218,7 +218,7 @@
             <Pin Id="FJvyu8wJMu0PVsDRgxZWTy" Name="Output" Kind="OutputPin" />
             <Pin Id="BOhBytSASjDPQzS6dTXagZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="659,290,25,19" Id="OLohAVR3ivsQCYauSm3lxP">
+          <Node Bounds="656,310,25,19" Id="OLohAVR3ivsQCYauSm3lxP">
             <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="+" />
@@ -297,7 +297,7 @@
               <Choice Kind="TypeFlag" Name="FontList" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="964,370,53,19" Id="HJgi89pHdEnLzc0DIT9Quf">
+          <Node Bounds="590,570,53,19" Id="HJgi89pHdEnLzc0DIT9Quf">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -310,14 +310,14 @@
             <Pin Id="F2p36Enu6HrNbl0RE8SpAx" Name="Value" Kind="OutputPin" />
             <Pin Id="GKfizvhymVzNl1piC7Uyxx" Name="Author" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="1149,520,86,19" Id="BDm9N1lsM12OS8nSe5Zg4Z">
+          <Node Bounds="476,570,86,19" Id="BDm9N1lsM12OS8nSe5Zg4Z">
             <p:NodeReference LastCategoryFullName="System.Logging.LoggerFactory" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GlobalRecorder" />
             </p:NodeReference>
             <Pin Id="P0o4Uq8LC2KNbh7jYEICTX" Name="Global Recorder" Kind="OutputPin" />
           </Node>
-          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="466,838,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\entrypoint-production\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
+          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="466,838,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\myApp\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
