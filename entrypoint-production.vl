@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.0" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.1-0030-gb320f7c791" Version="0.128">
   <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
     <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -15,15 +15,6 @@
       </p:NodeReference>
       <Patch Id="Osxg9b2yvgVNk8lZUzOdcc">
         <Canvas Id="BMOEJixDGh8Ov0rWsKQl0q" CanvasType="Group">
-          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="491,519,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\entrypoint-production\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="307,290,65,19" Id="FNUAhdWY5M8PG2CUIaYllR">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -57,13 +48,13 @@
             </p:NodeReference>
             <Pin Id="KEjJ9jR0cQpNoBPmu62c1R" Name="Default" Kind="OutputPin" />
           </Node>
-          <Node Bounds="275,720,145,19" Id="DiVx4vgQs7oPt7GohDB2YA">
+          <Node Bounds="275,800,145,19" Id="DiVx4vgQs7oPt7GohDB2YA">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="interfaces.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="BBvCuLQSmyKQDDoXe3y1Jt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="H8QtxlWk0ZFPbzb80oCesd" Name="Bounds" Kind="InputPin" DefaultValue="1296, 41, 540, 1060" IsHidden="true" />
+            <Pin Id="H8QtxlWk0ZFPbzb80oCesd" Name="Bounds" Kind="InputPin" DefaultValue="1444, 49, 952, 1368" IsHidden="true" />
             <Pin Id="UOq4bGYlsJMLMFX8b6i1dE" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="KI9ODYpgxh6MWtjDBO6YH3" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="GmwZHiTqdcnPV9sLhqlJfn" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -84,7 +75,7 @@
             <Pin Id="UwqoKBCH7Y9PcWxsmELZYp" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="UxIzmcvwBBZNJNxChFV7ix" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="275,457,179,152" Id="NyqU16hZF9gNssv43V5l5a">
+          <Node Bounds="275,457,383,192" Id="NyqU16hZF9gNssv43V5l5a">
             <p:NodeReference LastCategoryFullName="Graphics.Skia.Layer" LastDependency="VL.ImGui.Skia.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImGui" />
@@ -98,7 +89,7 @@
             <Pin Id="Iu0CLTcYAQOLgBKsJoFTz4" Name="Output" Kind="OutputPin" />
             <Patch Id="BfXhU2qrFhxPLy70pT2646" ManuallySortedPins="true">
               <Patch Id="T9gNIeN3j1QOwb4Wo73oz6" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="S7s9aosff99OutouME69zJ" Name="Update" ParticipatingElements="N2phe5R9JhcMmypRmwLK7J" ManuallySortedPins="true" />
+              <Patch Id="S7s9aosff99OutouME69zJ" Name="Update" ParticipatingElements="N2phe5R9JhcMmypRmwLK7J,QoLff51bYqnLdUztoYM1Ll" ManuallySortedPins="true" />
               <Patch Id="FpHI6hm8wK8LpZXfeXrzWo" Name="Dispose" />
               <Node Bounds="287,480,85,19" Id="LPJhrFakckAPaMh8WfpLem">
                 <p:NodeReference LastCategoryFullName="ImGui.Widgets" LastDependency="VL.ImGui.Skia.vl">
@@ -147,9 +138,23 @@
                 <Pin Id="TXHpLZtrSzSO2RT9BfFo8H" Name="Spacing" Kind="InputPin" />
                 <Pin Id="LFQbOhIKB2YMHBpOTY6xIP" Name="Context" Kind="OutputPin" />
               </Node>
+              <Node Bounds="521,610,125,19" Id="KmKu3dxBnW1OzNKATqnAIQ">
+                <p:NodeReference LastCategoryFullName="System.Logging.LogUI.Widgets" LastDependency="VL.LogView.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="LogUI (Widget)" />
+                </p:NodeReference>
+                <Pin Id="SuDlhaOitmTPGE1laaR68x" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="LUrab06IutMM4Ky6DTggL9" Name="Context" Kind="InputPin" />
+                <Pin Id="JRPlnL5JqvaONFkQl3zWs2" Name="Input" Kind="InputPin" />
+                <Pin Id="FfQxIbxOoksOi3amH0FD4C" Name="Color Theme" Kind="InputPin" />
+                <Pin Id="MsHBelnuRK9N6NxSa4C2Mb" Name="Wheel State" Kind="InputPin" />
+                <Pin Id="NpnGIfkCXGoNa6KVd2fD9O" Name="State" Kind="InputPin" />
+                <Pin Id="EVGhIUqsMgRMu2Ewxki2Ud" Name="Output" Kind="OutputPin" />
+                <Pin Id="RHoefycVGGoOPbE1TCkdpH" Name="Context" Kind="OutputPin" />
+              </Node>
             </Patch>
           </Node>
-          <Node Bounds="295,620,65,19" Id="VL8Fhg8sojJOljBZZWRNVJ">
+          <Node Bounds="295,700,65,19" Id="VL8Fhg8sojJOljBZZWRNVJ">
             <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Application" NeedsToBeDirectParent="true">
@@ -159,7 +164,7 @@
             </p:NodeReference>
             <Pin Id="Mq1Fk9kx90pP8aWr6UgbYs" Name="Is Exported" Kind="OutputPin" />
           </Node>
-          <Node Bounds="295,680,45,19" Id="HLSjeNUTBJKOudBsvwcbCs">
+          <Node Bounds="295,760,45,19" Id="HLSjeNUTBJKOudBsvwcbCs">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Switch (Boolean)" />
@@ -189,39 +194,138 @@
             <Patch Id="KTF9YorUbZ6PXOp1H7gJAJ" ManuallySortedPins="true">
               <Patch Id="Eh3bJBehQGaQdArp7hRl9b" Name="Create" ManuallySortedPins="true" />
               <Patch Id="DLAKm1i2HP0PLe6oLwrBjU" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="464,360,160,19" Id="Q1nMwGjhVz0MZPrmnAfxtS">
-                <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="TypesLoadedFromPluginFolders" />
-                </p:NodeReference>
-                <Pin Id="PQaW7TVSoKYLcyF3MMaMAq" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="UaZMsJdiSSDPF8UWnTduSX" Name="Reload" Kind="InputPin" />
-                <Pin Id="G8o2EWYTTwxOcC7yyFKpx2" Name="Folder" Kind="InputPin" />
-                <Pin Id="LGo8b3cLdOmQIPt8AW2NOo" Name="Output" Kind="OutputPin" />
-              </Node>
-              <Node Bounds="656,300,87,19" Id="LUG9Hl2Jv9JNNDKqsH4OXo">
-                <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
-                </p:NodeReference>
-                <Pin Id="FJvyu8wJMu0PVsDRgxZWTy" Name="Output" Kind="OutputPin" />
-                <Pin Id="BOhBytSASjDPQzS6dTXagZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              </Node>
-              <Node Bounds="656,330,25,19" Id="OLohAVR3ivsQCYauSm3lxP">
-                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="+" />
-                </p:NodeReference>
-                <Pin Id="O7MbbcyXlOhNEdiKCjEeQZ" Name="Input" Kind="InputPin" />
-                <Pin Id="Nv886PWDAzENFJ2YdPjccG" Name="Input 2" Kind="InputPin" DefaultValue="plugins\" />
-                <Pin Id="U05I0wSRQvILUiX20ke54k" Name="Output" Kind="OutputPin" />
-              </Node>
             </Patch>
             <ControlPoint Id="A9shYVc7jg3MlUb9ZRW9Q4" Bounds="466,401" Alignment="Bottom" />
             <ControlPoint Id="FraEA5e57ejLJ0OZy7BpST" Bounds="466,283" Alignment="Top" />
             <ControlPoint Id="C5s6dVGV85yMiw3mJotR46" Bounds="610,283" Alignment="Top" />
             <ControlPoint Id="UOZDjwvDwrLMX2nGHEC0Vq" Bounds="658,401" Alignment="Bottom" />
           </Node>
+          <Node Bounds="467,320,160,19" Id="Q1nMwGjhVz0MZPrmnAfxtS">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TypesLoadedFromPluginFolders" />
+            </p:NodeReference>
+            <Pin Id="PQaW7TVSoKYLcyF3MMaMAq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="UaZMsJdiSSDPF8UWnTduSX" Name="Reload" Kind="InputPin" />
+            <Pin Id="G8o2EWYTTwxOcC7yyFKpx2" Name="Folder" Kind="InputPin" DefaultValue="C:\dev\VL.PluginHostDemo\exported\entrypoint-production\plugins" />
+            <Pin Id="LGo8b3cLdOmQIPt8AW2NOo" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="659,260,87,19" Id="LUG9Hl2Jv9JNNDKqsH4OXo">
+            <p:NodeReference LastCategoryFullName="System.Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
+            </p:NodeReference>
+            <Pin Id="FJvyu8wJMu0PVsDRgxZWTy" Name="Output" Kind="OutputPin" />
+            <Pin Id="BOhBytSASjDPQzS6dTXagZ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="659,290,25,19" Id="OLohAVR3ivsQCYauSm3lxP">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="+" />
+            </p:NodeReference>
+            <Pin Id="O7MbbcyXlOhNEdiKCjEeQZ" Name="Input" Kind="InputPin" />
+            <Pin Id="Nv886PWDAzENFJ2YdPjccG" Name="Input 2" Kind="InputPin" DefaultValue="plugins\" />
+            <Pin Id="U05I0wSRQvILUiX20ke54k" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="819,310,101,19" Id="J1oGPuK7CzXMem2g36pJ1R">
+            <p:NodeReference LastCategoryFullName="Graphics.Themes" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DefaultDarkTheme" />
+            </p:NodeReference>
+            <Pin Id="OnMNMHxa4GaLw5wlQ76djJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Gt88HzlxcHEMRbokuhQ2OQ" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="819,372,71,19" Id="FEFW1Ebv9WPOGqXxUSBWT6">
+            <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="DefaultStyle" />
+            </p:NodeReference>
+            <Pin Id="QhBWJxoV8qwPFXZDFEIzvq" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Epsx5r7XRsLQMjYlrdtrfS" Name="Input" Kind="InputPin" />
+            <Pin Id="UWwWh3PEr3YP6cYCIASERs" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="385,190,39,19" Id="Vuyy6EIGoBdPCqURTaoJpo">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="Cons" />
+            </p:NodeReference>
+            <Pin Id="KIhTMgoOxpJK9X6WfFNyL2" Name="Input" Kind="InputPin" />
+            <Pin Id="DD5vdOSba8KNoPMctuEkTO" Name="Input 2" Kind="InputPin" />
+            <Pin Id="CUBgxQcnflPLzfdR8q6yBS" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="385,80,105,19" Id="EmdB1Xp8ulDNHHSSY36Bk0">
+            <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FontConfig" />
+            </p:NodeReference>
+            <Pin Id="Att9oS6O0YyOjkA5crlQFy" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PvVDYdhMil6Nnok3KCwjRa" Name="Family Name" Kind="InputPin" />
+            <Pin Id="H9I71B8rLMlPoF7KWEESbK" Name="Font Style" Kind="InputPin" />
+            <Pin Id="Hnoub1xET1SPLEogFiza6f" Name="Size" Kind="InputPin" />
+            <Pin Id="PRhhQ7m234LN50nmhSGHny" Name="Name" Kind="InputPin" DefaultValue="Mono" />
+            <Pin Id="QKT7aaF1MXYOYrx59w6d8x" Name="Glyph Range" Kind="InputPin" />
+            <Pin Id="CEkEqF5mS0uOI4kCwQpyn0" Name="Output" Kind="OutputPin" />
+            <Pin Id="MFlhCJWtnwtMgVceErMKeE" Name="Custom Glypth Range" Kind="InputPin" />
+          </Node>
+          <Node Bounds="419,159,105,19" Id="II6NFQi4vWdPP60ZAhCut8">
+            <p:NodeReference LastCategoryFullName="ImGui.Styling" LastDependency="VL.ImGui.Skia.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FontConfig" />
+            </p:NodeReference>
+            <Pin Id="P11FipRBoTmN48TAULy85m" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TMfGVaqVS5zMYOtog9WOv8" Name="Family Name" Kind="InputPin" DefaultValue="Segoe UI" />
+            <Pin Id="CmLxcLYXdQTQFq9D3CysAD" Name="Font Style" Kind="InputPin" />
+            <Pin Id="B33AoMnxMTUQR9gQa4pzx5" Name="Size" Kind="InputPin" DefaultValue="0.12" />
+            <Pin Id="Kxo236UF205NEap5sGyiWs" Name="Name" Kind="InputPin" />
+            <Pin Id="UcRjEeYVt5rQNofRPwLvyb" Name="Glyph Range" Kind="InputPin" />
+            <Pin Id="IdCfQneCB5INn1BUUs7a2W" Name="Output" Kind="OutputPin" />
+            <Pin Id="NO9y7lTlOkyOsmOCu2ece5" Name="Custom Glypth Range" Kind="InputPin" />
+          </Node>
+          <Pad Id="TlEaz7fB7tmQMInsQKaOsP" Comment="Family Name" Bounds="421,119,181,15" ShowValueBox="true" isIOBox="true" Value="Consolas">
+            <p:TypeAnnotation LastCategoryFullName="Text" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="FontList" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SsZKOWoxEzgMQH8gEvTAU3" Comment="Name" Bounds="481,141,35,15" ShowValueBox="true" isIOBox="true" Value="Mono">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="E9lQF8sU3fKQKW6O62MaAZ" Comment="Family Name" Bounds="387,47,181,15" ShowValueBox="true" isIOBox="true" Value="Segoe UI">
+            <p:TypeAnnotation LastCategoryFullName="Text" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="FontList" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="964,370,53,19" Id="HJgi89pHdEnLzc0DIT9Quf">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Channel" />
+            </p:NodeReference>
+            <Pin Id="IV59ASUACf4P2Qg54RhwXW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OUXTpmI9H0AP3qoPbiI6ym" Name="Initial Value" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HONr9qu5C4cQGRHTZdLc86" Name="Value" Kind="InputPin" />
+            <Pin Id="E06FBfGfIosMk7Wkc8AQa8" Name="Output" Kind="OutputPin" />
+            <Pin Id="F2p36Enu6HrNbl0RE8SpAx" Name="Value" Kind="OutputPin" />
+            <Pin Id="GKfizvhymVzNl1piC7Uyxx" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="1149,520,86,19" Id="BDm9N1lsM12OS8nSe5Zg4Z">
+            <p:NodeReference LastCategoryFullName="System.Logging.LoggerFactory" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GlobalRecorder" />
+            </p:NodeReference>
+            <Pin Id="P0o4Uq8LC2KNbh7jYEICTX" Name="Global Recorder" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="466,838,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\entrypoint-production\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Dqy8GETm27hM0TVd6g9x7I" Name="Create" />
         <Patch Id="OYsCWa783aMNnmq1JPhVfH" Name="Update" />
@@ -245,13 +349,26 @@
         <Link Id="OaVkxZ8jHJ9OgjNbnUvX98" Ids="A9shYVc7jg3MlUb9ZRW9Q4,V3LG78shjLaNoqG8gDYByv" />
         <Link Id="UWKSgJTqkYqNi7jBq0kr6h" Ids="C5s6dVGV85yMiw3mJotR46,UOZDjwvDwrLMX2nGHEC0Vq" IsFeedback="true" />
         <Link Id="QZLgrY0AJVHNfFm6bw5Mod" Ids="UOZDjwvDwrLMX2nGHEC0Vq,Uo5OcVNwayRNC8k3NwMGM7" />
-        <Link Id="RMbYBcRNkBZQdnPN7W1ott" Ids="U05I0wSRQvILUiX20ke54k,G8o2EWYTTwxOcC7yyFKpx2" />
         <Link Id="GRNJnUYK7B1LUtuqnrVGPD" Ids="U05I0wSRQvILUiX20ke54k,UOZDjwvDwrLMX2nGHEC0Vq" />
         <Link Id="G8mXhWzyws5QK92EAvBaNQ" Ids="FJvyu8wJMu0PVsDRgxZWTy,O7MbbcyXlOhNEdiKCjEeQZ" />
+        <Link Id="G2tAxSzYDcJLqzFXHoTsWd" Ids="CEkEqF5mS0uOI4kCwQpyn0,KIhTMgoOxpJK9X6WfFNyL2" />
+        <Link Id="OhyERFGj47zNo9gorDBrjA" Ids="IdCfQneCB5INn1BUUs7a2W,DD5vdOSba8KNoPMctuEkTO" />
+        <Link Id="B1PuOUabAOYNrzhofw7Qdl" Ids="Gt88HzlxcHEMRbokuhQ2OQ,Epsx5r7XRsLQMjYlrdtrfS" />
+        <Link Id="KVME6OK1PJpQDWH7ZeH6uA" Ids="Gt88HzlxcHEMRbokuhQ2OQ,FfQxIbxOoksOi3amH0FD4C" />
+        <Link Id="TNiFb45drTSPPwcwmlpbZv" Ids="TlEaz7fB7tmQMInsQKaOsP,TMfGVaqVS5zMYOtog9WOv8" />
+        <Link Id="UGi7drGb63qPI12QTKY3dH" Ids="SsZKOWoxEzgMQH8gEvTAU3,Kxo236UF205NEap5sGyiWs" />
+        <Link Id="OWo7mSgQeXAPkV5Tm8Tjhy" Ids="E9lQF8sU3fKQKW6O62MaAZ,PvVDYdhMil6Nnok3KCwjRa" />
+        <Link Id="OhCmYGJxA98OjrXjTUCRjC" Ids="E06FBfGfIosMk7Wkc8AQa8,NpnGIfkCXGoNa6KVd2fD9O" />
+        <Link Id="KXbtRF8cPtfP5iOheJnftF" Ids="P0o4Uq8LC2KNbh7jYEICTX,JRPlnL5JqvaONFkQl3zWs2" />
+        <Link Id="OfX9RiFAYx3O8rDUHRSCXx" Ids="CUBgxQcnflPLzfdR8q6yBS,KK9PEBpABR0Mp2K3iomcQN" />
+        <Link Id="I0vrBNrmIzuLsSemdUV10Q" Ids="UWwWh3PEr3YP6cYCIASERs,TMpCSkIu6JeM91cJ1olowV" />
+        <Link Id="QoLff51bYqnLdUztoYM1Ll" Ids="L63s0VAejRyOTElvPLUe6Q,LUrab06IutMM4Ky6DTggL9" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="EhoG6RIuq2fL2qA6WR3d6n" Location="./host.vl" />
   <NugetDependency Id="B9t1wisjgP3LJaSy4wkRww" Location="VL.ImGui.Skia" Version="2025.7.0" />
   <NugetDependency Id="LAOo2jTLRAPPuTj3beLED8" Location="VL.Skia" Version="2025.7.0" />
+  <NugetDependency Id="KUJTyXdSFslLXBVcRJyxIX" Location="VL.LogView" Version="2025.7.0" />
+  <NugetDependency Id="K613sqJPsqQPPJmAcfGzFI" Location="VL.ImGui.Stride" Version="2025.7.0" />
 </Document>

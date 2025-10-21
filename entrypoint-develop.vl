@@ -65,7 +65,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="S2VLnnz3swcPXlHee56tjp" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LcepTM19vmoPHZIi4hSuCm" Name="Bounds" Kind="InputPin" DefaultValue="1320, 32, 548, 1036" IsHidden="true" />
+            <Pin Id="LcepTM19vmoPHZIi4hSuCm" Name="Bounds" Kind="InputPin" DefaultValue="1376, 57, 548, 1254" IsHidden="true" />
             <Pin Id="JKN9rs68bu3P9bVD3ZRWm1" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="U06D7yrlLjULvWrr4KIheO" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="GLdkPaPgG41PqsE434BymG" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -107,4 +107,6 @@
   <DocumentDependency Id="EjhI59R9EanOUYwCWadaYe" Location="./TAL-NoiseMaker.vl" />
   <DocumentDependency Id="VByyBLZhq6pOALgULVsf9H" Location="./Ana.vl" />
   <DocumentDependency Id="I9i4nmSnm47NPoNjvZtQi1" Location="./Posterize/Posterize.vl" />
+  <DocumentDependency Id="ExWRNHudcEPNyVZ8QQWS3Q" Location="./TexFXWithAssets/TexFXWithAssets.vl" />
+  <NugetDependency Id="GMNSYTyI7P5OWo55lFou0l" Location="VL.Stride.TextureFX" Version="2025.7.0" />
 </Document>
