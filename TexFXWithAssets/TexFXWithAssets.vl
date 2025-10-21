@@ -16,7 +16,7 @@
         <Patch Id="LDZqZjKusa0MXweT2PWU8l">
           <Canvas Id="LOjf1dMmOqsM021QsMUMAN" CanvasType="Group">
             <Node Bounds="200,103,60,19" Id="VTFij3xjsXqOzNMsRlsa69">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="entrypoint-production.vl">
+              <p:NodeReference LastCategoryFullName="Main" LastDependency="myApp.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessNode" Name="PatchPath" />
               </p:NodeReference>
