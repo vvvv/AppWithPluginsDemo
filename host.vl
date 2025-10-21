@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="C1eLsF2yl1mQaY2qgDDfCt" LanguageVersion="2025.7.1-0030-gb320f7c791" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="C1eLsF2yl1mQaY2qgDDfCt" LanguageVersion="2025.7.1-0044-gd58b47febe" Version="0.128">
   <NugetDependency Id="KivWwdKv9kbOQ2oJzaZbIt" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="L35r3I5AdQkPOGtkiIDB2E">
     <Canvas Id="HdqidXl0dPnNX3Lbj5wfbR" DefaultCategory="Main" CanvasType="FullCategory">
@@ -16,7 +16,7 @@
         <Patch Id="T7Kx3jqeklwL5rm7W1bTPE" IsGeneric="true">
           <Canvas Id="FOGkNyLvK1XN7lzvOjYtjH" CanvasType="Group">
             <ControlPoint Id="IWvfUhHGopdQbo0AkX82Xt" Bounds="429,125" />
-            <Node Bounds="392,165,141,225" Id="RfzeQGI6O2KOFM6aTAhcNC">
+            <Node Bounds="392,165,142,225" Id="RfzeQGI6O2KOFM6aTAhcNC">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -77,6 +77,8 @@
               <ControlPoint Id="H0JuIwzHBV9NNFo3GX5rTF" Bounds="429,384" Alignment="Bottom" />
             </Node>
             <ControlPoint Id="KMgbf88LiGmMfW9FCqhJio" Bounds="429,441" />
+            <ControlPoint Id="IiXOHCvhJLLNecc8p4wk5k" Bounds="583,170" />
+            <Pad Id="Gqu9VmrscjSMfTDN9CWF5j" Bounds="583,210" />
           </Canvas>
           <ProcessDefinition Id="IlYwnu50IJQQGopxX8Gadm">
             <Fragment Id="TacEpsXlIhoMMU3fBaIjaO" Patch="AJTmsFWp9cRNchmChP3C2x" Enabled="true" />
@@ -84,7 +86,9 @@
           </ProcessDefinition>
           <Link Id="Dx4MEFpADeKPo4Gh4wEhe4" Ids="AolSGbPe27HONGp3W8v9zy,IWvfUhHGopdQbo0AkX82Xt" IsHidden="true" />
           <Link Id="J0utyCCh6GOOtmt80RFhc5" Ids="IWvfUhHGopdQbo0AkX82Xt,FSkdh0kKdXLLpvdwWP0usE" />
-          <Patch Id="AJTmsFWp9cRNchmChP3C2x" Name="Create" />
+          <Patch Id="AJTmsFWp9cRNchmChP3C2x" Name="Create">
+            <Pin Id="VhyvOsajPxoMQt4M47Clgi" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+          </Patch>
           <Patch Id="NUuT1NUUb2DNxWz4bPMcny" Name="Update">
             <Pin Id="AolSGbPe27HONGp3W8v9zy" Name="Plugin Type" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="System.Reflection" LastDependency="VL.CoreLib.vl">
@@ -102,6 +106,9 @@
           <Link Id="Vrxm3prGHAFMpcwO9aBbJa" Ids="ElG0pVtTc97PRCyBb1Cd5m,DoHmpjYH0iON4IBnEdXLTt,H0JuIwzHBV9NNFo3GX5rTF" />
           <Link Id="LM1t1FQ3TGeNsMbl9JHeNA" Ids="H0JuIwzHBV9NNFo3GX5rTF,KMgbf88LiGmMfW9FCqhJio" />
           <Link Id="T1zOoEtXGz2LhpOEKr61un" Ids="KMgbf88LiGmMfW9FCqhJio,SNPq6YpmPp3NQwdOLJapiH" IsHidden="true" />
+          <Link Id="NwT3npqxUgDM073Loglz4y" Ids="VhyvOsajPxoMQt4M47Clgi,IiXOHCvhJLLNecc8p4wk5k" IsHidden="true" />
+          <Link Id="JtZDPza3mYRNKz33ViwORz" Ids="IiXOHCvhJLLNecc8p4wk5k,Gqu9VmrscjSMfTDN9CWF5j" />
+          <Link Id="HfrKUJdtBD7MTVkCekh4yA" Ids="Gqu9VmrscjSMfTDN9CWF5j,HPR59eQUDcaO829YpXNTzJ" />
         </Patch>
       </Node>
       <!--
@@ -1436,6 +1443,7 @@
               <Pin Id="Qq865oJC64RPqdp9TRPF9O" Name="Entity" Kind="OutputPin" />
               <Pin Id="N7fopoL5uWYPtqVorKpjQk" Name="Show Helper" Kind="InputPin" IsHidden="true" />
             </Node>
+            <ControlPoint Id="Gwze2HaTdNGPOgGUIzcthJ" Bounds="863,1740" />
           </Canvas>
           <Link Id="ECBJ35H1GeBQR9lV12p0ZQ" Ids="JApntRmQzD9PjCZ7arpFq6,S1fDKsRyTUkMvugAVwaUDM" />
           <Link Id="Uehv0epxi9zNYbmw5hR5Ci" Ids="QnfMVLFLSuGQUqQXlkCeWP,GlfPxPlffv2LHt6duqh8Zf" />
@@ -1491,7 +1499,7 @@
           <Link Id="MChPwELp9YXLYuoy8wdTur" Ids="B77kBnKTg7SPwHNW4YIIjc,QQ7P2moBzPiLnULDLWObuo" />
           <Link Id="K0LV09QZgbrNDOd1K8LW3N" Ids="AkM3zxPDYYmLYDzXqtJztk,BH7gQscBIo7N9mkYQaComA" />
           <Link Id="OSykPUxptCLLLoVL39nFLe" Ids="V3bfLz9jKjINBKxJnIP8re,Jj6arMXhcp7O1z3RnMkh5t" />
-          <Link Id="IIKn2BYekiLN11yonTpewd" Ids="C9GjtlL4pbGN6ZiayafzzS,GA8cDYMWwC8PYbOoL0Ka65" />
+          <Link Id="IIKn2BYekiLN11yonTpewd" Ids="C9GjtlL4pbGN6ZiayafzzS,Gwze2HaTdNGPOgGUIzcthJ,GA8cDYMWwC8PYbOoL0Ka65" />
           <Link Id="GSTTuacvFZlLdOuH9U1EMk" Ids="LkA2NVVXF1lOaDspCCnL1M,UY3NqIwJGGJO97dfPKH9Zn" />
           <Link Id="BAWOVvY5kXLM7sY5lPUHma" Ids="SR0WjVerGCRL1hrWE8lloS,Tv7en16qWB7QKdoIEZxqMt" />
           <Link Id="CrrR7m3jk1LO1gvj9cDojz" Ids="FEaNvnCe9gHLVNNQP6XQi9,QGAIgIvcBJHPhzp6thsUk2" />
@@ -1884,6 +1892,6 @@
   <NugetDependency Id="Qlv3FyLVyYsNGtMexDXwp0" Location="VL.Stride.Windows" Version="2025.7.0" />
   <NugetDependency Id="GOq4rl8RRTSPs9OS5jqkQB" Location="VL.Stride.Runtime" Version="2025.7.0" />
   <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.0" />
-  <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.3" />
+  <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.16" />
   <NugetDependency Id="PDsBCVPA5hWMDyDmlSZyIY" Location="VL.HDE" Version="2025.7.0" />
 </Document>
