@@ -31,3 +31,16 @@ On the plugin side the `plugin*.vl` get exported and their resulting dll needs t
 
 ## Future work
 Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application.
+
+## Instructions for vvvv dev build (for devvvvs only)
+Compile vvvv itself with
+```
+cd MY_REPOS\vvvv
+build EditorAndPackages
+```
+
+Compile entrypoint-production.vl with
+```
+cd bin\win-x64\vvvv_gamma_MY_VERSION
+vvvvc MY_REPOS\VL.PluginHostDemo\entrypoint-production.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
+```
