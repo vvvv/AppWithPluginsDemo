@@ -59,7 +59,4 @@
     </Node>
   </Patch>
   <NugetDependency Id="IKKtZhslJYjN2S9ptpTdRQ" Location="VL.Skia" IsForward="true" Version="2025.7.0" />
-  <NugetDependency Id="MuqJprTlNPKNkZXaizZ9m7" Location="VL.Stride.TextureFX" Version="2025.7.0" />
-  <NugetDependency Id="QkyrOFwyvsMLVNCohm42SR" Location="VL.Audio.VST" Version="0.1.7-alpha" />
-  <NugetDependency Id="K1OlmJpHwRvPi29zf8pH3v" Location="VL.Audio" Version="1.9.16" />
 </Document>
