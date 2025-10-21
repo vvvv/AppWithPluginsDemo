@@ -66,9 +66,6 @@ Expore loading the plugins via a separate [assembly load context ](https://learn
 
 ## Notes for devvvvs
 ### TODOs
-- See that myApp and myApp-develop look the same - only the way they scan for plugins differs
-- Split interfaces to different files (2D, 3D, Audio) for tidier build output
-- Move plugin source files to seperate subfolders, main folder should only contain basics
 - `PatchPath` node needs to be copied to each plugin to work correctly
 - Build plugin which makes use of native dll
 - Review internal code of Stride asset bundle loading
