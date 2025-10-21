@@ -1076,57 +1076,6 @@
                 </Node>
                 <Patch Id="APM91n8t9hiNlAiryV6Ja6" Name="Update" />
                 <Patch Id="DHwHCAOjFizNUU9tUC4AdI" Name="Dispose" />
-                <Node Bounds="1282,1510,170,131" Id="B1813mbPR7GP5UHlgDwdvM">
-                  <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="Control" />
-                    <Choice Kind="ProcessAppFlag" Name="Comment" />
-                  </p:NodeReference>
-                  <Patch Id="Dlb6UPwXuRHLqsNIEuQUxp" ManuallySortedPins="true">
-                    <Patch Id="VNhQb9pYnHJNz1kAgKiRLk" Name="Create" ManuallySortedPins="true" />
-                    <Patch Id="Qx6h4D0oIEIOfv3nt2Ox9H" Name="Update" ManuallySortedPins="true" />
-                    <Patch Id="IR92AbhXa1ZPFgvJdqdy1u" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="1294,1563,86,19" Id="C7ay1GWHHvdOYeBzZF8nKN">
-                      <p:NodeReference LastCategoryFullName="HDE.Viewers" LastDependency="VL.HDE.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="ProcessAppFlag" Name="AdaptiveViewer" />
-                      </p:NodeReference>
-                      <Pin Id="VSQO2cmiK1APr0E9ZOxgmA" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                      <Pin Id="PPl7jkftYO4MNGxYYPfshn" Name="Value" Kind="InputPin" />
-                      <Pin Id="KFq9RMKV7EmLUmgqFEFfsL" Name="Recreate" Kind="InputPin" />
-                      <Pin Id="GijAT0CPpTbLhgIcUZLXwH" Name="Context" Kind="InputPin" />
-                      <Pin Id="BXn45tAJW4ILWWp8lXClfC" Name="Output" Kind="OutputPin" IsHidden="true" />
-                      <Pin Id="EnCkKJvxvDOPgiKoHEiC3Q" Name="Widget" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="1294,1602,85,19" Id="D9SBSFqhVYnP9cZNFtYpVD">
-                      <p:NodeReference LastCategoryFullName="HDE.TooltipWidgets" LastDependency="VL.HDE.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="ProcessAppFlag" Name="PlaceWidget" />
-                      </p:NodeReference>
-                      <Pin Id="Ex36Wvk3JD6PSoEFJjL6Lb" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                      <Pin Id="DUIVjhwl77gQEQuEpylPis" Name="Widget" Kind="InputPin" />
-                      <Pin Id="KEfMk4KesMGNKASP8htTHK" Name="Position" Kind="InputPin" />
-                      <Pin Id="AQE0uTyCNgnNaR1IK1T9nh" Name="Min Size" Kind="InputPin" />
-                      <Pin Id="DskpCSZGHENLhanoX5XDIg" Name="Max Size" Kind="InputPin" DefaultValue="5, 3.4" />
-                      <Pin Id="KTgZ4lrGhBhOdNZKoGXJLf" Name="Force Layout" Kind="InputPin" />
-                      <Pin Id="PfIAd4WeJKHNN3ZpKBvFmb" Name="Layer" Kind="OutputPin" />
-                      <Pin Id="B1oROsjunF3MN47QjMmIkT" Name="Bounds" Kind="OutputPin" />
-                    </Node>
-                    <Node Bounds="1375,1533,65,19" Id="KnLyPEvHNdXLw8myomQaNL">
-                      <p:NodeReference LastCategoryFullName="HDE.Viewers.ViewerContext" LastDependency="VL.HDE.vl">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="4026531840" Name="ViewerContext" NeedsToBeDirectParent="true" />
-                        <Choice Kind="OperationCallFlag" Name="New" />
-                      </p:NodeReference>
-                      <Pin Id="Sha0IEwnA99OonMDyvKonu" Name="Is Tooltip" Kind="InputPin" />
-                      <Pin Id="VO2WBIso2HANGYtBDbfO2z" Name="Context" Kind="InputPin" />
-                      <Pin Id="M6jMGEPtT3iP2xQXp9AD2E" Name="Compile Time Type" Kind="InputPin" />
-                      <Pin Id="BQkK3PoICyCOxEJ8CQOIgT" Name="Checkpoints" Kind="InputPin" />
-                      <Pin Id="NufBRQst4utN8Nlm333X82" Name="Result" Kind="OutputPin" />
-                    </Node>
-                  </Patch>
-                  <Pin Id="DoMdX6u96J0N4m6nLK8oaa" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                </Node>
                 <Node Bounds="1044,1560,169,102" Id="T8Mk7vzxIXULMDsKlG9zmo">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -1503,7 +1452,6 @@
           <Link Id="GSTTuacvFZlLdOuH9U1EMk" Ids="LkA2NVVXF1lOaDspCCnL1M,UY3NqIwJGGJO97dfPKH9Zn" />
           <Link Id="BAWOVvY5kXLM7sY5lPUHma" Ids="SR0WjVerGCRL1hrWE8lloS,Tv7en16qWB7QKdoIEZxqMt" />
           <Link Id="CrrR7m3jk1LO1gvj9cDojz" Ids="FEaNvnCe9gHLVNNQP6XQi9,QGAIgIvcBJHPhzp6thsUk2" />
-          <Link Id="KOJh9HvqO8KOUr7QnNBinX" Ids="SR0WjVerGCRL1hrWE8lloS,PPl7jkftYO4MNGxYYPfshn" />
           <Link Id="FGpeKTMkFKNNPtzQ3qyHe3" Ids="LI2l2WDU6CTQM2xahqxpOP,IW5MxuZxHnzLJzCu9OCPzK" />
           <Link Id="N6H9997l8j4Nk2Ugak1KQx" Ids="FEaNvnCe9gHLVNNQP6XQi9,TWyULWkxhAIMLmp4GjHcp9" />
           <Link Id="TUlXey5D4l4PUHMYGLpiqF" Ids="ELtvOfbNpZuNKgEOq5ZJrh,QtbZLMHGI6YOMq41qzXvvv" />
@@ -1516,8 +1464,6 @@
           <Link Id="DIdHAiW9YNDNe8FQp7glhC" Ids="NbIqP1aWsbBMUSM7r6UUkx,BiIZFz4YrnIQD2Yh6lLwiz" />
           <Link Id="J9MxrYYxsimMmYpMTGRvJi" Ids="QgcsQyvB6LPLjJCKqGXKVe,QxxsG4zNwNVLhQWjVtC1rB" />
           <Link Id="SqnCxN0p1keOMZbDtNyDWQ" Ids="SxhTdXMuLHyM1ZURavnuqo,RAu6vcDAZvKPijjZscN8ho" />
-          <Link Id="NxGpf8jRsp9LsKhsANnkh1" Ids="EnCkKJvxvDOPgiKoHEiC3Q,DUIVjhwl77gQEQuEpylPis" />
-          <Link Id="KAACwefsErFQOis3kZ6LK4" Ids="NufBRQst4utN8Nlm333X82,GijAT0CPpTbLhgIcUZLXwH" />
           <Link Id="AJTU23XytprP00m9BEQuRJ" Ids="SR0WjVerGCRL1hrWE8lloS,S9cBbrhsMjPOqlUdZVjryQ" />
           <Link Id="SkAsErzGXmSO0hV3kq9Vlg" Ids="S9cBbrhsMjPOqlUdZVjryQ,LcRhr4iGpesOsibdywiyWL" />
           <Link Id="Q3DddUtcZ8sNt2hOr2uKlU" Ids="JVzyKswAU1nLsgp8pKLOmG,PCNg0sR4w0dN4Pd11HAAjg" />
@@ -1893,5 +1839,4 @@
   <NugetDependency Id="GOq4rl8RRTSPs9OS5jqkQB" Location="VL.Stride.Runtime" Version="2025.7.0" />
   <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.0" />
   <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.16" />
-  <NugetDependency Id="PDsBCVPA5hWMDyDmlSZyIY" Location="VL.HDE" Version="2025.7.0" />
 </Document>
