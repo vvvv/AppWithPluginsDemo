@@ -1,28 +1,56 @@
 # PluginHostDemo
-Sketches ideas how to build host with plugins in VL
-
-This is a slightly modified version as was outlined [in the forum](http://forum.vvvv.org/t/export-and-load-dlls-from-gamma/22278/4).
+Sketches ideas how to build applications with plugins in VL
 
 The main files are
-- `interfaces.vl` - this is the one file all others reference. It contains the plugin interface (called `IPlugin` in this example, which has an `Update` operation returning a Skia layer).
-- `pluginA.vl` contains a class `PluginA` implementing `IPlugin` by rendering "Hello from A".
-- `pluginB.vl` contains a class `PluginB` implementing `IPlugin` by rendering "Hello from B".
-- `host.vl` contains host related logic and must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
+- `Layer-plugins.vl`, `TexFX-plugins.vl`, `Audio-plugins.vl` - These contain the plugin interfaces.
 - `myApp.vl` references `host.vl` and is intended for export.
 - `myApp-develop.vl` like above but also references any plugins directly to be able to work on them
+- `host.vl` contains host related logic and must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
+
+`plugins` folder:
+- `pluginA`, `pluginB` contain Skia Layer plugins
+- `Ana` simple TextureFX
+- `Posterize` a TextureFX with custom shaders
+- `TexFXWithAssets` a TextureFX with an asset folder
+- `TAL-NoiseMaker` an Audio plugin that uses a VST instrument
 
 ## Export
 On the hosting side only `myApp.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
 
-On the plugin side the `plugin*.vl` get exported and their resulting dll needs to be manually copied to the before mentioned `plugins` folder.
+Plugins need to be exported into `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`.
 
-To export from command line use
+To export myApp from command line use
 ```
 cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
 vvvvc MY_REPOS\VL.PluginHostDemo\myApp.vl
-vvvvc MY_REPOS\VL.PluginHostDemo\pluginA.vl
-vvvvc MY_REPOS\VL.PluginHostDemo\pluginB.vl
 ```
+`exported\myApp` folder now contains `myApp.exe`  
+
+To export layer plugins from command line use
+```
+cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\pluginA\pluginA.vl
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\pluginB\pluginB.vl
+```
+
+To export TextureFX plugins from command line use
+```
+cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\Ana\Ana.vl
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\Posterize\Posterize.vl
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\TexFXWithAssets\TexFXWithAssets.vl
+```
+
+Copy the Asset folder `MY_REPOS\VL.PluginHostDemo\plugins\TexFXWithAssets\` to `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins\TexFXWithAssets`
+
+To export Audio plugins from command line use
+```
+cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
+vvvvc MY_REPOS\VL.PluginHostDemo\plugins\TAL-NoiseMaker\TAL-NoiseMaker.vl
+```
+
+all plugins are now in `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
+
 
 ## Known Issues
 - You can not add a reference to an exported plugin.dll to your `myApp-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
@@ -63,6 +91,9 @@ TODO: In its current form however it needs to be copied from plugin to plugin to
 
 ## Future work
 Expore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application.
+
+## Credits
+This is a slightly modified version as was outlined [in the forum](http://forum.vvvv.org/t/export-and-load-dlls-from-gamma/22278/4).
 
 ## Notes for devvvvs
 ### TODOs
