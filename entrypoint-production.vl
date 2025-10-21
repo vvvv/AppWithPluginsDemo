@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.1-0030-gb320f7c791" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
   <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
     <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -54,7 +54,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="BBvCuLQSmyKQDDoXe3y1Jt" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="H8QtxlWk0ZFPbzb80oCesd" Name="Bounds" Kind="InputPin" DefaultValue="1444, 49, 952, 1368" IsHidden="true" />
+            <Pin Id="H8QtxlWk0ZFPbzb80oCesd" Name="Bounds" Kind="InputPin" DefaultValue="1048, 18, 952, 1220" IsHidden="true" />
             <Pin Id="UOq4bGYlsJMLMFX8b6i1dE" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="KI9ODYpgxh6MWtjDBO6YH3" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="GmwZHiTqdcnPV9sLhqlJfn" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -200,14 +200,14 @@
             <ControlPoint Id="C5s6dVGV85yMiw3mJotR46" Bounds="610,283" Alignment="Top" />
             <ControlPoint Id="UOZDjwvDwrLMX2nGHEC0Vq" Bounds="658,401" Alignment="Bottom" />
           </Node>
-          <Node Bounds="467,320,160,19" Id="Q1nMwGjhVz0MZPrmnAfxtS">
+          <Node Bounds="464,350,160,19" Id="Q1nMwGjhVz0MZPrmnAfxtS">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TypesLoadedFromPluginFolders" />
             </p:NodeReference>
             <Pin Id="PQaW7TVSoKYLcyF3MMaMAq" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UaZMsJdiSSDPF8UWnTduSX" Name="Reload" Kind="InputPin" />
-            <Pin Id="G8o2EWYTTwxOcC7yyFKpx2" Name="Folder" Kind="InputPin" DefaultValue="C:\dev\VL.PluginHostDemo\exported\entrypoint-production\plugins" />
+            <Pin Id="G8o2EWYTTwxOcC7yyFKpx2" Name="Folder" Kind="InputPin" />
             <Pin Id="LGo8b3cLdOmQIPt8AW2NOo" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="659,260,87,19" Id="LUG9Hl2Jv9JNNDKqsH4OXo">
@@ -363,6 +363,7 @@
         <Link Id="OfX9RiFAYx3O8rDUHRSCXx" Ids="CUBgxQcnflPLzfdR8q6yBS,KK9PEBpABR0Mp2K3iomcQN" />
         <Link Id="I0vrBNrmIzuLsSemdUV10Q" Ids="UWwWh3PEr3YP6cYCIASERs,TMpCSkIu6JeM91cJ1olowV" />
         <Link Id="QoLff51bYqnLdUztoYM1Ll" Ids="L63s0VAejRyOTElvPLUe6Q,LUrab06IutMM4Ky6DTggL9" />
+        <Link Id="A0D3LBND9vaNydRPJShrNc" Ids="U05I0wSRQvILUiX20ke54k,G8o2EWYTTwxOcC7yyFKpx2" />
       </Patch>
     </Node>
   </Patch>
