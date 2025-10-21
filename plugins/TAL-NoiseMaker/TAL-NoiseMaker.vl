@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Gu7APWafO3bMKHSbua0FCr" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
-  <NugetDependency Id="LpqRyoDQ8frQGtZby2EshX" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Gu7APWafO3bMKHSbua0FCr" LanguageVersion="2025.7.1-0047-ga6403b876a" Version="0.128">
+  <NugetDependency Id="LpqRyoDQ8frQGtZby2EshX" Location="VL.CoreLib" Version="2025.7.1-0047-ga6403b876a" />
   <Patch Id="AHB11swLQQ4MlzooUiJB6N">
     <Canvas Id="GPwf3rsROD2MMV8dgqZ2sp" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -116,10 +116,28 @@
           </ProcessDefinition>
           <Patch Id="FVOZJ4S88iUQVkLQYCpUPl" Name="Update">
             <Pin Id="NumeXCt8XrNLCimWPwrs2y" Name="Audio In" Kind="InputPin" />
-            <Pin Id="Shn80LdToHYMMkyFqULYMY" Name="Midi In" Kind="InputPin" />
+            <Pin Id="Shn80LdToHYMMkyFqULYMY" Name="Midi In" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Observable" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="IO.Midi.Messages" LastDependency="VL.IO.Midi.vl">
+                    <Choice Kind="TypeFlag" Name="MidiMessage" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="FIKHjAWoSbRQNXtyE4somY" Name="Instrument" Kind="OutputPin" />
             <Pin Id="F8x6C6qlihROGWZtywWdzC" Name="Audio Out" Kind="OutputPin" />
-            <Pin Id="BvnaVeMsThYLgtlhvGql6I" Name="Midi Out" Kind="OutputPin" />
+            <Pin Id="BvnaVeMsThYLgtlhvGql6I" Name="Midi Out" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Observable" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="IO.Midi.Messages" LastDependency="VL.IO.Midi.vl">
+                    <Choice Kind="TypeFlag" Name="MidiMessage" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
           </Patch>
           <Link Id="Kujwz27UqnbPsY6gg7gbuv" Ids="BcvbOQqdAXDLsSSCTLV7Bq,NRKYtIA149MPA0kRAsFX5O" />
           <Link Id="HzIdOUOai6gOai7OJoYVvr" Ids="NRKYtIA149MPA0kRAsFX5O,FIKHjAWoSbRQNXtyE4somY" IsHidden="true" />
@@ -170,4 +188,5 @@
   <NugetDependency Id="Eu12uqmhvMSPqlWtUmmGi6" Location="VL.Audio.VST" Version="0.1.7-alpha" />
   <DocumentDependency Id="LW7yMvWrv3MM1pgO3m0zFM" Location="../../Audio-plugins.vl" />
   <NugetDependency Id="ENHqrvVLER8Ntu07lzBqdz" Location="VL.Audio" Version="1.9.16" />
+  <NugetDependency Id="EvRzW54yThrMF0nAdi4g43" Location="VL.IO.Midi" Version="2.0.5" />
 </Document>
