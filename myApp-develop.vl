@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B8BilwmWrTXNfJFsOlwymW" LanguageVersion="2025.7.0" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="B8BilwmWrTXNfJFsOlwymW" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
   <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.0" />
   <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
     <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="Osxg9b2yvgVNk8lZUzOdcc">
         <Canvas Id="BMOEJixDGh8Ov0rWsKQl0q" CanvasType="Group">
-          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="647,457,216,160" ShowValueBox="true" isIOBox="true" Value="This file references arbitrary plugins directly in order to work on them">
+          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="421,486,216,160" ShowValueBox="true" isIOBox="true" Value="This file references arbitrary plugins directly in order to work on them">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -24,67 +24,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="485,400,105,19" Id="R7WHYMe9Tc1PUG4hIa8zG7">
+          <Node Bounds="233,540,48,19" Id="J28nxJMb4L3PnzWQpvZhm6">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="AllReferencedTypes" />
+              <Choice Kind="ProcessAppFlag" Name="myApp" />
             </p:NodeReference>
-            <Pin Id="R1lPak11o7yPEPk64GmUsK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="KHWJ7CrZqwTLKgFXElhUkV" Name="Registered Types" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="432,448,80,80" Id="CmFmimPw1BHMxuphNvIHWJ">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layer" LastDependency="VL.ImGui.Skia.vl">
-              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ImGui" />
-            </p:NodeReference>
-            <Pin Id="NKPsqArrMuhOOaWiv8CwKF" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NkKuTXAGzDRME3rRWpJCXH" Name="Docking Enabled" Kind="InputPin" />
-            <Pin Id="Fptl48xYBcmMxQCNraQae4" Name="Fonts" Kind="InputPin" />
-            <Pin Id="QAlOQ8u134gNykCJzwFlN3" Name="Add Fullscreen Window" Kind="InputPin" />
-            <Pin Id="HzqPIZOZGLTObmqbvwgWkW" Name="Style" Kind="InputPin" />
-            <Pin Id="K9DMRorFywWNmZ3nJTHAS2" Name="Use Skia Space" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="OjSBAUvw3QUNY2pu6oHzme" Name="Output" Kind="OutputPin" />
-            <Patch Id="HfUAijWPYL1PRpvci1VPoO" ManuallySortedPins="true">
-              <Patch Id="LvfKXBcKMY4MxhcILwaMg5" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="PP9Ua2GTDPQM2CfLlnty6X" Name="Update" ManuallySortedPins="true" />
-              <Patch Id="RhVblUwQrswMwnFwKfIHft" Name="Dispose" />
-              <Node Bounds="455,480,35,19" Id="EnWSlRb3JdDNOOoj8zQJZx">
-                <p:NodeReference LastCategoryFullName="Main" LastDependency="entrypoint-develop.vl">
-                  <Choice Kind="ProcessNode" Name="App" />
-                </p:NodeReference>
-                <Pin Id="DzbloOTXsJvOMj2mg0l4dL" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="KU4nl8jwDusLPKxUt5mqAr" Name="Context" Kind="InputPin" />
-                <Pin Id="QXuS5JivywfPN5Q2tkMANu" Name="Type Infos" Kind="InputPin" />
-                <Pin Id="IXPu9j1gzutM280iKEJFBl" Name="Context" Kind="OutputPin" />
-              </Node>
-            </Patch>
-          </Node>
-          <Node Bounds="432,560,145,19" Id="AHKp3YhgIDXMRvp0GqOnNx">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Renderer" />
-            </p:NodeReference>
-            <Pin Id="S2VLnnz3swcPXlHee56tjp" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LcepTM19vmoPHZIi4hSuCm" Name="Bounds" Kind="InputPin" DefaultValue="1376, 57, 548, 1254" IsHidden="true" />
-            <Pin Id="JKN9rs68bu3P9bVD3ZRWm1" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
-            <Pin Id="U06D7yrlLjULvWrr4KIheO" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GLdkPaPgG41PqsE434BymG" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
-            <Pin Id="MngzK5MiTSPLHi8BYnR6oy" Name="Always On Top" Kind="InputPin" IsHidden="true" />
-            <Pin Id="FQOMLnWe5pgLhSJzBwsFcc" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CtZpq2kvCh2LaZw2BLRcce" Name="Input" Kind="InputPin" />
-            <Pin Id="VIVjHsjnhZDOY8JBCJAMxE" Name="Title" Kind="InputPin" DefaultValue="develop" />
-            <Pin Id="ShZxBBWFIBNQErZksJwCmY" Name="Color" Kind="InputPin" />
-            <Pin Id="M53Mjueaf80OEzJ5AJJ0tL" Name="Clear" Kind="InputPin" />
-            <Pin Id="F2slhZ8dcu4PTsmfjnopoW" Name="Space" Kind="InputPin" DefaultValue="DIPTopLeft" />
-            <Pin Id="TimXIajBUOpLzqvhSb3vjL" Name="Show Cursor" Kind="InputPin" />
-            <Pin Id="Hn9EwmJgUddPLgTndRUq5I" Name="VSync" Kind="InputPin" />
-            <Pin Id="JGPV3nIM2H9LcMMvu5Nn6l" Name="Commands" Kind="InputPin" IsHidden="true" />
-            <Pin Id="ISFT9K63cq9MSLelBbBl6k" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VKSHExfpyF9NVy9LNyxHAV" Name="Enabled" Kind="InputPin" />
-            <Pin Id="BgQP5tz8iyuQRBdSOwhXsg" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="VAyv1GQJZRQOLLHxNz7Gld" Name="Form" Kind="OutputPin" />
-            <Pin Id="Ci5lZRCiUJVLpY7XQdaYYw" Name="ClientBounds" Kind="OutputPin" />
-            <Pin Id="T7AeCu9y1B8OEdWMAJS9ui" Name="Render Time" Kind="OutputPin" />
+            <Pin Id="EUuVjUs0atdPvRM9TbXMK3" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RBfNTpBAQw6Nw4IZZjJFqU" Name="Is Develop" Kind="InputPin" DefaultValue="True" />
           </Node>
         </Canvas>
         <Patch Id="Dqy8GETm27hM0TVd6g9x7I" Name="Create" />
@@ -93,20 +39,18 @@
           <Fragment Id="GkmeWrnImBjOzaJGDAqSSu" Patch="Dqy8GETm27hM0TVd6g9x7I" Enabled="true" />
           <Fragment Id="V46m5KEtH24LOM9T5uvb1w" Patch="OYsCWa783aMNnmq1JPhVfH" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="KACoOB48m4iMmCnjLLuFJv" Ids="OjSBAUvw3QUNY2pu6oHzme,CtZpq2kvCh2LaZw2BLRcce" />
-        <Link Id="BWemZeC7HBrNi19kCFppgg" Ids="KHWJ7CrZqwTLKgFXElhUkV,QXuS5JivywfPN5Q2tkMANu" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="EhoG6RIuq2fL2qA6WR3d6n" Location="./host.vl" />
-  <DocumentDependency Id="SrDAa0dpyg8NUSiK4IG9bz" Location="./pluginA.vl" />
   <NugetDependency Id="S3jCYLYv2PjMeE6cpFcU9f" Location="VL.ImGui.Skia" Version="2025.7.0" />
   <NugetDependency Id="ARbC68xZGksO4oMWNr1Rti" Location="VL.Skia" Version="2025.7.0" />
-  <DocumentDependency Id="MNlnmP4ZNmBMmLrvMCxgxw" Location="./pluginB.vl" />
   <NugetDependency Id="TGbGH1sIHrpNnhdetYmZom" Location="VL.ImGui.Stride" Version="2025.7.0" />
-  <DocumentDependency Id="EjhI59R9EanOUYwCWadaYe" Location="./TAL-NoiseMaker.vl" />
-  <DocumentDependency Id="VByyBLZhq6pOALgULVsf9H" Location="./Ana.vl" />
-  <DocumentDependency Id="I9i4nmSnm47NPoNjvZtQi1" Location="./Posterize/Posterize.vl" />
-  <DocumentDependency Id="ExWRNHudcEPNyVZ8QQWS3Q" Location="./TexFXWithAssets/TexFXWithAssets.vl" />
   <NugetDependency Id="GMNSYTyI7P5OWo55lFou0l" Location="VL.Stride.TextureFX" Version="2025.7.0" />
+  <DocumentDependency Id="LT1ZsBIjhlIOHQCfCMUEkb" Location="./plugins/Ana/Ana.vl" />
+  <DocumentDependency Id="GDSrpdJvuBcNCPnKjCc7TF" Location="./plugins/pluginA/pluginA.vl" />
+  <DocumentDependency Id="QmqUJSHzWtvMBrQSELe5ui" Location="./plugins/pluginB/pluginB.vl" />
+  <DocumentDependency Id="B4ssw44BMfXLPGraE2yE5g" Location="./plugins/Posterize/Posterize.vl" />
+  <DocumentDependency Id="KA9TgF11xtTNfcGwzfrnM3" Location="./plugins/TAL-NoiseMaker/TAL-NoiseMaker.vl" />
+  <DocumentDependency Id="SOsvNb5ERhxNErCdVJCBdz" Location="./plugins/TexFXWithAssets/TexFXWithAssets.vl" />
 </Document>

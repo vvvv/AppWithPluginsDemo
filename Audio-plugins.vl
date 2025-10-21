@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="KRL804Z7eIiMUM8LnN44Bn" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
+  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.0" />
+  <Patch Id="NMY4kd39pb4LkjSI4pVcoc">
+    <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ IAudioPlugin ************************
+
+-->
+      <Node Name="IAudioPlugin" Bounds="395,451" Id="MJXZuAtKmdlOBpBHLoDcr6">
+        <p:NodeReference>
+          <Choice Kind="InterfaceDefinition" />
+        </p:NodeReference>
+        <Patch Id="Sq3gxINqV2lMVvTM6qtfl7">
+          <Canvas Id="FuDR2qilLaYP1s1OuOGPQ3" CanvasType="Group">
+            <ControlPoint Id="S32GwCgZd1GLUsb7vQiA8n" Bounds="561,440" />
+            <ControlPoint Id="FbKr56KByq9NDlcFyO89f4" Bounds="418,530" />
+            <ControlPoint Id="LEWQMbz9VY5NVsVOQUNIpV" Bounds="561,530" />
+          </Canvas>
+          <ProcessDefinition Id="NQmmWOqhNHOPq4iOwcWVJ0" IsHidden="true">
+            <Fragment Id="Ia75U1xQoRTOGbv5LxCb3B" Patch="P55j1095A1vMWDBiXxvuBI" />
+          </ProcessDefinition>
+          <Patch Id="P55j1095A1vMWDBiXxvuBI" Name="Update">
+            <Pin Id="JY9D5rUcONqPpMaQH8imzO" Name="Audio In" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="IReadOnlyList" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Audio" LastDependency="VL.Audio.VST.vl">
+                    <Choice Kind="TypeFlag" Name="AudioSignal" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="AuEdiqymihNNPFAZ9mFgrU" Name="Instrument" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HiUf4djyEPTOMVpKdhGsg5" Name="Audio Out" Kind="OutputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections.Interfaces" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="IReadOnlyList" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Audio" LastDependency="VL.Audio.VST.vl">
+                    <Choice Kind="TypeFlag" Name="AudioSignal" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <Link Id="PXtSahlBuL5L00chvu0v0f" Ids="JY9D5rUcONqPpMaQH8imzO,S32GwCgZd1GLUsb7vQiA8n" IsHidden="true" />
+          <Link Id="P0pfqNybOiyNgdKc0m5BLZ" Ids="FbKr56KByq9NDlcFyO89f4,AuEdiqymihNNPFAZ9mFgrU" IsHidden="true" />
+          <Link Id="K4znavmiQbLNzwsK6upcz6" Ids="LEWQMbz9VY5NVsVOQUNIpV,HiUf4djyEPTOMVpKdhGsg5" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="MyCVnXB8ldYPr0sZe24RIu">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PEn97TWLrC8LjluhOQvZBT">
+        <Canvas Id="J3ldeyT58dpNO4hoRA5TXS" CanvasType="Group" />
+        <Patch Id="L6nLLJbETNjPQ7KB18sbPJ" Name="Create" />
+        <Patch Id="GijRKzZRkAJOTUKEJ5H9RN" Name="Update" />
+        <ProcessDefinition Id="SIzogpknDaELL9HyPBmXoi">
+          <Fragment Id="AkXVaFHPD1VPMxpLWFU86k" Patch="L6nLLJbETNjPQ7KB18sbPJ" Enabled="true" />
+          <Fragment Id="AeevBxCOi7lMYGkug4BkIl" Patch="GijRKzZRkAJOTUKEJ5H9RN" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="K1OlmJpHwRvPi29zf8pH3v" Location="VL.Audio" Version="1.9.16" />
+</Document>

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <VLAssetBehavior>RelativeToOutput</VLAssetBehavior>
     <VLCleanBuildDirectory>True</VLCleanBuildDirectory>
-    <VLExportPath>$(MsBuildThisFileDirectory)..\exported\myApp\plugins</VLExportPath>
+    <VLExportPath>$(MsBuildThisFileDirectory)..\..\exported\myApp\plugins</VLExportPath>
     <VLIgnoreCompileErrors>False</VLIgnoreCompileErrors>
     <VLIgnoreUnhandledExceptions>False</VLIgnoreUnhandledExceptions>
     <OutputType>WinExe</OutputType>
