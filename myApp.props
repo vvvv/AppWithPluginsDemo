@@ -10,5 +10,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ApplicationIcon>$(MsBuildThisFileDirectory)myApp.ico</ApplicationIcon>
   </PropertyGroup>
 </Project>
