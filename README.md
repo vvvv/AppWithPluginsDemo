@@ -55,6 +55,7 @@ all plugins are now in `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
 ## Known Issues
 - You can not add a reference to an exported plugin.dll to your `myApp-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
 - For now `PatchPath` needs to be copied from plugin to plugin, see TODO below
+- Third party libraries need to be referenced by both host and plugin as of now, see TODO below. For example currently the host needs to reference `VL.Audio.VST` for the `TAL-NoiseMaker` plugin to work. Ideally this reference shouldn't exist.
 - A plugin needs to have a dummy entry point
 - All plugins have basic dlls duplicated in their build output folder
 - Host and plugin need to be build with same version of vvvv
@@ -97,6 +98,8 @@ This is a slightly modified version as was outlined [in the forum](http://forum.
 
 ## Notes for devvvvs
 ### TODOs
+- Add assembly resolver for plugins so they can have reference third partly dlls the host does not have
+- Make sure node factories get notified about new plugins at runtime
 - `PatchPath` node needs to be copied to each plugin to work correctly
 - Build plugin which makes use of native dll
 - Review internal code of Stride asset bundle loading
