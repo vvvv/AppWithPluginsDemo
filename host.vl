@@ -1527,7 +1527,7 @@
                   <Pin Id="Gp9KBD1OOmeMAfvp2CbQS0" Name="Input 2" Kind="InputPin" DefaultValue="plugins" />
                   <Pin Id="RC2GjdOAg40Pf2YQzY47r9" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="485,385,813,681" Id="DeWuEzmRpp2PiFt1uyzAwt">
+                <Node Bounds="485,385,813,734" Id="DeWuEzmRpp2PiFt1uyzAwt">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Primitive" />
@@ -1716,10 +1716,24 @@
                       <Pin Id="Bfakf7ZhzrqNffelbT3FF6" Name="Current" Kind="OutputPin" />
                     </Node>
                     <ControlPoint Id="RovuD4cIU81Mn58kDglT6S" Bounds="1057,980" />
+                    <Node Bounds="626,1080,65,19" Id="J4b1izN5pIJMd3bBlPglSM">
+                      <p:NodeReference LastCategoryFullName="System.Logging" LastDependency="VL.CoreLib.vl">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="Category" Name="Logging" NeedsToBeDirectParent="true" />
+                        <Choice Kind="ProcessAppFlag" Name="Log" />
+                      </p:NodeReference>
+                      <Pin Id="CLlmpPIC9e6OzeK2zWY1Wu" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="PeAikvE3PaTQZ9neyqlSF9" Name="Message" Kind="InputPin" />
+                      <Pin Id="BTfPIPqyWd4LgfAfESfYZt" Name="Log Level" Kind="InputPin" DefaultValue="Error" />
+                      <Pin Id="KpmQaH4gOQRPTqHzZHDvIz" Name="Event Id" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="FZtzTUkGq03LVq3J6sQJng" Name="Category" Kind="InputPin" />
+                      <Pin Id="Suk0tCyVEgEPpXG6vrsGyr" Name="Exception" Kind="InputPin" IsHidden="true" />
+                      <Pin Id="GRk15JQG0U2MtyVgxnxS6f" Name="Apply" Kind="InputPin" />
+                    </Node>
                   </Patch>
                   <ControlPoint Id="GcNxebDnNnEPWVTs8LV2TX" Bounds="499,391" Alignment="Top" />
                   <ControlPoint Id="FZbDSLAlD0vOapet3VWDqm" Bounds="1140,391" Alignment="Top" />
-                  <ControlPoint Id="Nvz9ydi5LmzLwxjnzuTetB" Bounds="1140,1060" Alignment="Bottom" />
+                  <ControlPoint Id="Nvz9ydi5LmzLwxjnzuTetB" Bounds="1140,1113" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="1138,300,66,26" Id="VvqdDfgHUwqOzmGu5xtG52">
                   <p:NodeReference LastCategoryFullName="Collections.Builder.SpreadBuilder" LastDependency="VL.CoreLib.vl">
@@ -1803,6 +1817,8 @@
           <Link Id="O7ChQGgNmN1NSxaN7bPnq4" Ids="FZbDSLAlD0vOapet3VWDqm,Nvz9ydi5LmzLwxjnzuTetB" />
           <Link Id="G4mBJsNHZ11LP0oMQ2RxJ1" Ids="Nvz9ydi5LmzLwxjnzuTetB,UCPBF5H6XoDOoZLlPmzElC" />
           <Link Id="BD7i5OgkVv0PkP6vkIUGPE" Ids="FZbDSLAlD0vOapet3VWDqm,RovuD4cIU81Mn58kDglT6S,PPSHnJnJKgbNE0fRIZsRc2" />
+          <Link Id="Suf8dzllibxLm3zMa9hKWX" Ids="OIyEEBWmljpLSmWAyy3dq0,PeAikvE3PaTQZ9neyqlSF9" />
+          <Link Id="GWonOrHERZAMcy7gknvk0R" Ids="S9PUz45osfNNuc99Us0RwD,GRk15JQG0U2MtyVgxnxS6f" />
         </Patch>
       </Node>
       <!--
