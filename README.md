@@ -54,7 +54,6 @@ all plugins are now in `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
 
 ## Known Issues
 - You can not add a reference to an exported plugin.dll to your `myApp-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
-- For now `PatchPath` needs to be copied from plugin to plugin, see TODO below
 - A plugin needs to have a dummy entry point
 - All plugins have basic dlls duplicated in their build output folder
 - Host and plugin need to be build with same version of vvvv
@@ -79,7 +78,7 @@ USER/AppData/Local/myCompany-plugins/myPlugin/myPlugin.dll
 USER/AppData/Local/myCompany-plugins/myPlugin/assets/foo.jpg
 ```
 
-We have a node called `PatchPath` which always points to `myPlugin` and can be used to build file paths.
+We have a node called `PatchPath` which always points `myPlugin` and can be used to build file paths.
 
 TODO: In its current form however it needs to be copied from plugin to plugin to work correctly!
 
@@ -97,7 +96,6 @@ This is a slightly modified version as was outlined [in the forum](http://forum.
 
 ## Notes for devvvvs
 ### TODOs
-- `PatchPath` node needs to be copied to each plugin to work correctly
 - Build plugin which makes use of native dll
 - Review internal code of Stride asset bundle loading
 
