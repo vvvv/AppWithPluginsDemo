@@ -47,5 +47,4 @@
   <NugetDependency Id="LAOo2jTLRAPPuTj3beLED8" Location="VL.Skia" Version="2025.7.1-0047-ga6403b876a" />
   <NugetDependency Id="KUJTyXdSFslLXBVcRJyxIX" Location="VL.LogView" Version="2025.7.1-0047-ga6403b876a" />
   <NugetDependency Id="K613sqJPsqQPPJmAcfGzFI" Location="VL.ImGui.Stride" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="SibthFtg1jJOtGqD7dnC6S" Location="VL.Audio.VST" Version="0.1.7-alpha" />
 </Document>

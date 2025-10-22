@@ -185,8 +185,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Eu12uqmhvMSPqlWtUmmGi6" Location="VL.Audio.VST" Version="0.1.7-alpha" />
   <DocumentDependency Id="LW7yMvWrv3MM1pgO3m0zFM" Location="../../Audio-plugins.vl" />
   <NugetDependency Id="ENHqrvVLER8Ntu07lzBqdz" Location="VL.Audio" Version="1.9.16" />
   <NugetDependency Id="EvRzW54yThrMF0nAdi4g43" Location="VL.IO.Midi" Version="2.0.5" />
+  <NugetDependency Id="M4j8gswVZhKNZ5vH34QcDH" Location="VL.Audio.VST" Version="0.1.7-alpha" />
 </Document>

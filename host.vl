@@ -1819,6 +1819,7 @@
           <Link Id="BD7i5OgkVv0PkP6vkIUGPE" Ids="FZbDSLAlD0vOapet3VWDqm,RovuD4cIU81Mn58kDglT6S,PPSHnJnJKgbNE0fRIZsRc2" />
           <Link Id="Suf8dzllibxLm3zMa9hKWX" Ids="OIyEEBWmljpLSmWAyy3dq0,PeAikvE3PaTQZ9neyqlSF9" />
           <Link Id="GWonOrHERZAMcy7gknvk0R" Ids="S9PUz45osfNNuc99Us0RwD,GRk15JQG0U2MtyVgxnxS6f" />
+          <Link Id="LrWYtVyBESqL5aCYytjIH0" Ids="SpiGWTfEu0PMjaQMAMzWbx,Fqt4IS6SQVbPedhu4K07jX" />
         </Patch>
       </Node>
       <!--
@@ -1871,7 +1872,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
               <Pin Id="BAlbjNGCMRMNhFsVPJPX5j" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="1372, 82, 672, 1220" IsHidden="true" />
+              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="1165, 55, 672, 1220" IsHidden="true" />
               <Pin Id="VLgIPbVKt2jMXMjyMNL2EW" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="P7EcpXWlPvTPbuRC0V0fFi" Name="Bound to Document" Kind="InputPin" DefaultValue="True" IsHidden="true" />
               <Pin Id="Vr4KFOP0aUyO5middoUmc1" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -2224,9 +2225,6 @@
   <PlatformDependency Id="QFJZQInGXVVP9iKormlL5F" Location="mscorlib" />
   <NugetDependency Id="I7xVzgvYjJeOAYKyzIhINt" Location="VL.ImGui.Skia" Version="2025.7.1-0047-ga6403b876a" />
   <NugetDependency Id="JkVLe74oh1OMRValyYOrms" Location="VL.Stride" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="AMk1UO9PZ9BN9qq8j6IWQF" Location="VL.Stride.TextureFX" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="Qlv3FyLVyYsNGtMexDXwp0" Location="VL.Stride.Windows" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="GOq4rl8RRTSPs9OS5jqkQB" Location="VL.Stride.Runtime" Version="2025.7.1-0047-ga6403b876a" />
   <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.1-0047-ga6403b876a" />
   <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.16" />
   <DocumentDependency Id="UA2dReUBeXCO5Ko3k9Wmys" Location="./Audio-plugins.vl" />
