@@ -28,6 +28,7 @@ Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/ref
 - Don't mix vvvv versions: APIs provided by vvvv and used by your patches could change in between versions and break compatibility. You most likely will see `MissingMethodException` or `TypeLoadException` in case that happens.
 - Don't mix package versions across plugins. Build a list of versions every plugin should work with.
 - You may consider stripping plugins from duplicated dlls, but be aware: if you know the host application, it should be safe to remove all dlls the host already provides. But in case of multiple hosts this needs to be coordinated.
+- Shader names must be unique across all plugins! This is a limitation that comes with Stride. 
 
 ### Dealing with paths
 Imagine the following project structure:
@@ -51,11 +52,41 @@ USER/AppData/Local/myCompany-plugins/myPlugin/assets/foo.jpg
 We have a node called `PatchPath` which always points `myPlugin` and can be used to build file paths.
 
 ## Known Issues
+Feel free to [get in touch](https://vvvv.org/support/) if any of these bug you:
 - A plugin needs to have a dummy entry point in order to show up in the export dialog. A simple comment in the application patch is enough.
+- "Rescan Plugins" button in `myApp` does not work for TexFX plugins
+- Plugins referencing VL.Stride will contain a Stride bundle (data\db\default.bundle) which is quite big
 - Untested: A plugin that makes use of native dll
 
-## Future work
-Explore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application. And it could allow different plugins to use different versions of the same package
+## Further thoughts
+Explore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext). This could allow updating and removing plugins at runtime in the exported application. And it could allow different plugins to use different versions of the same package. Beware though: Different versions of a package may come with the same shader, which would still not work (remember: Shader names need to be globally unique).
+
+### Current version: Plugin developer has access to source of myApp
+In case loading the host app is too slow when only developing plugins, consider using the host app as a source package, making use of vvvv's precompilation:
+
+```
+vvvv.exe --package-repositories myApp-repo
+
+myApp-repo
+ myApp (precompiled)
+ myApp.Interfaces (precompiled)
+
+myplugin-develop.vl -> references: myApp, myplugin.vl
+myplugin.vl -> references: myApp.Interfaces
+```
+
+### Plugin developer doesn't have access to source of myApp
+```
+nuget.org or private nuget feed
+ myApp (binary)
+ myApp.Interfaces (binary)
+
+myplugin-develop.vl -> references: myApp, myplugin.vl
+myplugin.vl -> references: myApp.Interfaces
+```
+
+### Develop plugins live in the host
+Develop plugins directly in the app, by opening a VL editor...
 
 ## Related Discussions
 This is a slightly modified version as was outlined [in the forum](http://forum.vvvv.org/t/export-and-load-dlls-from-gamma/22278/4).
