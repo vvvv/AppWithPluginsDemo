@@ -1,55 +1,26 @@
 # PluginHostDemo
-Sketches ideas how to build applications with plugins in VL
+Demonstrates how to build an application in VL that can host plugins.
 
-The main files are
-- info: `myApp.vl` references `host.vl` and is intended for export.
-- info: `myApp-plugindevelop.vl` like above but also references any plugins directly to be able to work on them
-- info: `host.vl` contains host related logic and must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
-- Plugin Interfaces: `Layer-plugins.vl`, `TexFX-plugins.vl`, `Audio-plugins.vl` - These contain the plugin interfaces.
+## Overview
+- The main application: `myApp.vl` references `host.vl`. This is what is being exported to deploy the app.
+- A separate document for developing plugins: `myApp-plugindevelop.vl`. The same as above but: Also references any plugin .vl documents directly to work on them
+- The core app: `host.vl`: Must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
+- Plugin Interfaces: `Layer-plugins.vl`, `TexFX-plugins.vl`, `Audio-plugins.vl`
 
-`plugins` folder:
+The `\plugins` folder with example plugins:
 - `pluginA`, `pluginB` contain Skia Layer plugins
 - `Ana` simple TextureFX
 - `Posterize` a TextureFX with custom shaders
 - `TexFXWithAssets` a TextureFX with an asset folder
 - `TAL-NoiseMaker` an Audio plugin that uses a VST instrument
 
-## Export
-On the hosting side only `myApp.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
+## Running the demo
+- Export `myApp.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
+- Open the individual plugins from the `\plugins` folder and export them 
+  - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
+  - Notice how `TexFXWithAssets` includes a .targets file that makes sure the assets folder is also copied over
 
-Plugins need to be exported into `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`.
-
-To export myApp from command line use
-```
-cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
-vvvvc MY_REPOS\VL.PluginHostDemo\myApp.vl
-```
-`exported\myApp` folder now contains `myApp.exe`  
-
-To export layer plugins from command line use
-```
-cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\pluginA\pluginA.vl
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\pluginB\pluginB.vl
-```
-
-To export TextureFX plugins from command line use
-```
-cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\Ana\Ana.vl
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\Posterize\Posterize.vl
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\TexFXWithAssets\TexFXWithAssets.vl
-```
-
-Copy the Asset folder `MY_REPOS\VL.PluginHostDemo\plugins\TexFXWithAssets\` to `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins\TexFXWithAssets`
-
-To export Audio plugins from command line use
-```
-cd PROGRAM_FILES\vvvv_gamma_MY_VERSION_
-vvvvc MY_REPOS\VL.PluginHostDemo\plugins\TAL-NoiseMaker\TAL-NoiseMaker.vl
-```
-
-all plugins are now in `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
+Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/reference/hde/exporting.html#the-commandline-compiler) to simplify your deployment scenario.
 
 ## Guidelines
 - Keep your interfaces as minimal as possible. Make sure they only reference packages that they actually need. This helps to keep the output folder small. If you have multiple plugin interfaces using different technologies think about placing them in seperate VL files.
