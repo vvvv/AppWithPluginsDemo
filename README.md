@@ -60,7 +60,7 @@ Explore loading the plugins via a separate [assembly load context ](https://lear
 ## Related Discussions
 This is a slightly modified version as was outlined [in the forum](http://forum.vvvv.org/t/export-and-load-dlls-from-gamma/22278/4).
 
-### Instructions for vvvv dev build (for devvvvs only)
+## Instructions for vvvv dev build (for devvvvs only)
 Compile vvvv itself with
 ```
 cd MY_REPOS\vvvv
