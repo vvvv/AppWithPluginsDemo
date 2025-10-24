@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="C1eLsF2yl1mQaY2qgDDfCt" LanguageVersion="2025.7.1-0050-ge5aae0486e" Version="0.128">
-  <NugetDependency Id="KivWwdKv9kbOQ2oJzaZbIt" Location="VL.CoreLib" Version="2025.7.1-0050-ge5aae0486e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="C1eLsF2yl1mQaY2qgDDfCt" LanguageVersion="2025.7.1-0060-g4ca60ff2f6" Version="0.128">
+  <NugetDependency Id="KivWwdKv9kbOQ2oJzaZbIt" Location="VL.CoreLib" Version="2025.7.1-0060-g4ca60ff2f6" />
   <Patch Id="L35r3I5AdQkPOGtkiIDB2E">
     <Canvas Id="HdqidXl0dPnNX3Lbj5wfbR" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -1870,7 +1870,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
               <Pin Id="BAlbjNGCMRMNhFsVPJPX5j" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="1164, 53, 672, 1220" IsHidden="true" />
+              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="442, 103, 672, 1220" IsHidden="true" />
               <Pin Id="VLgIPbVKt2jMXMjyMNL2EW" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="P7EcpXWlPvTPbuRC0V0fFi" Name="Bound to Document" Kind="InputPin" DefaultValue="True" IsHidden="true" />
               <Pin Id="Vr4KFOP0aUyO5middoUmc1" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -2148,7 +2148,7 @@
               </p:NodeReference>
               <Pin Id="CF8m0OJ8sPGNDQHkGav9bu" Name="Condition" Kind="InputPin" />
               <Pin Id="FWrN4CZMGXpL8yvWwyihVK" Name="Input" Kind="InputPin" DefaultValue="export me" />
-              <Pin Id="PUHlWNnoYy6Mu6RtDIyk9s" Name="Input 2" Kind="InputPin" DefaultValue="myApp - develop" />
+              <Pin Id="PUHlWNnoYy6Mu6RtDIyk9s" Name="Input 2" Kind="InputPin" DefaultValue="myApp - plugindevelop" />
               <Pin Id="OMy1AVnqLpuMFXTYamQSlH" Name="Output" Kind="OutputPin" />
             </Node>
           </Canvas>
@@ -2220,12 +2220,12 @@
     </Node>
   </Patch>
   <PlatformDependency Id="QFJZQInGXVVP9iKormlL5F" Location="mscorlib" />
-  <NugetDependency Id="I7xVzgvYjJeOAYKyzIhINt" Location="VL.ImGui.Skia" Version="2025.7.1-0050-ge5aae0486e" />
-  <NugetDependency Id="JkVLe74oh1OMRValyYOrms" Location="VL.Stride" Version="2025.7.1-0050-ge5aae0486e" />
-  <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.1-0050-ge5aae0486e" />
+  <NugetDependency Id="I7xVzgvYjJeOAYKyzIhINt" Location="VL.ImGui.Skia" Version="2025.7.1-0060-g4ca60ff2f6" />
+  <NugetDependency Id="JkVLe74oh1OMRValyYOrms" Location="VL.Stride" Version="2025.7.1-0060-g4ca60ff2f6" />
+  <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.1-0060-g4ca60ff2f6" />
   <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.16" />
   <DocumentDependency Id="UA2dReUBeXCO5Ko3k9Wmys" Location="./Audio-plugins.vl" />
   <DocumentDependency Id="VhryCjfPWy3Le6oV89io1m" Location="./Layer-plugins.vl" />
   <DocumentDependency Id="OrI0sz4K5bDLCchru6MIwg" Location="./TexFX-plugins.vl" />
-  <NugetDependency Id="C2NUg3KRGcsP3pAoXPLW4Z" Location="VL.LogView" Version="2025.7.1-0050-ge5aae0486e" />
+  <NugetDependency Id="C2NUg3KRGcsP3pAoXPLW4Z" Location="VL.LogView" Version="2025.7.1-0060-g4ca60ff2f6" />
 </Document>
