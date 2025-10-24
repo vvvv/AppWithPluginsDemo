@@ -15,7 +15,7 @@ The `\plugins` folder with example plugins:
 - `TAL-NoiseMaker` an Audio plugin that uses a VST instrument
 
 ## Running the demo
-- Export `myApp.vl` is intended to be exported. The resulting executable will look beside its `plugins` folder for plugin dlls.
+- Export `myApp.vl`. The resulting executable will look beside its `plugins` folder for plugin dlls.
 - Open the individual plugins from the `\plugins` folder and export them 
   - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
   - Notice how `TexFXWithAssets` includes a .targets file that makes sure the assets folder is also copied over
