@@ -3,7 +3,7 @@ Sketches ideas how to build applications with plugins in VL
 
 The main files are
 - info: `myApp.vl` references `host.vl` and is intended for export.
-- info: `myApp-develop.vl` like above but also references any plugins directly to be able to work on them
+- info: `myApp-plugindevelop.vl` like above but also references any plugins directly to be able to work on them
 - info: `host.vl` contains host related logic and must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
 - Plugin Interfaces: `Layer-plugins.vl`, `TexFX-plugins.vl`, `Audio-plugins.vl` - These contain the plugin interfaces.
 
@@ -53,7 +53,7 @@ all plugins are now in `MY_REPOS\VL.PluginHostDemo\exported\myApp\plugins`
 
 ## Guidelines
 - Keep your interfaces as minimal as possible. Make sure they only reference packages that they actually need. This helps to keep the output folder small. If you have multiple plugin interfaces using different technologies think about placing them in seperate VL files.
-- Don't add a reference to an exported plugin.dll to your `myApp-develop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
+- Don't add a reference to an exported plugin.dll to your `myApp-plugindevelop` environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
 - Don't mix vvvv versions: APIs provided by vvvv and used by your patches could change in between versions and break compatibility. You most likely will see `MissingMethodException` or `TypeLoadException` in case that happens.
 - Don't mix package versions across plugins. Build a list of versions every plugin should work with.
 - You may consider stripping plugins from duplicated dlls, but be aware: if you know the host application, it should be safe to remove all dlls the host already provides. But in case of multiple hosts this needs to be coordinated.
