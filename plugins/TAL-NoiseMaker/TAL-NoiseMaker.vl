@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Gu7APWafO3bMKHSbua0FCr" LanguageVersion="2025.7.1-0047-ga6403b876a" Version="0.128">
-  <NugetDependency Id="LpqRyoDQ8frQGtZby2EshX" Location="VL.CoreLib" Version="2025.7.1-0047-ga6403b876a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Gu7APWafO3bMKHSbua0FCr" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
+  <NugetDependency Id="LpqRyoDQ8frQGtZby2EshX" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
   <Patch Id="AHB11swLQQ4MlzooUiJB6N">
     <Canvas Id="GPwf3rsROD2MMV8dgqZ2sp" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -185,8 +185,8 @@
       </Patch>
     </Node>
   </Patch>
-  <DocumentDependency Id="LW7yMvWrv3MM1pgO3m0zFM" Location="../../Audio-plugins.vl" />
-  <NugetDependency Id="ENHqrvVLER8Ntu07lzBqdz" Location="VL.Audio" Version="1.9.16" />
+  <NugetDependency Id="ENHqrvVLER8Ntu07lzBqdz" Location="VL.Audio" Version="1.9.14" />
   <NugetDependency Id="EvRzW54yThrMF0nAdi4g43" Location="VL.IO.Midi" Version="2.0.5" />
   <NugetDependency Id="M4j8gswVZhKNZ5vH34QcDH" Location="VL.Audio.VST" Version="0.1.7-alpha" />
+  <NugetDependency Id="C1EPnCtd3rhNhAZ4eKan3i" Location="MyApp.Plugin.Audio" Version="0.0.0" />
 </Document>

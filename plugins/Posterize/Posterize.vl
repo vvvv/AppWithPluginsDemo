@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
-  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
+  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
   <Patch Id="OrgKWCFF7IEM3jlv00AmKZ">
     <Canvas Id="GNE8SToFsAnN8EATT4aCBt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -152,6 +152,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.0" />
-  <DocumentDependency Id="GYPNotRYpnJMQjxlJfs4dK" Location="../../TexFX-plugins.vl" />
+  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="Vam0Yr7Hti5MSkgXH8urgn" Location="MyApp.Plugin.TexFX" Version="0.0.0" />
 </Document>

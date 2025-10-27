@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DXJ015LMzIZM9jwoIadPvG" LanguageVersion="2025.7.1-0050-ge5aae0486e" Version="0.128">
-  <NugetDependency Id="GcUVDhiRogoLa5AeQpNl0p" Location="VL.CoreLib" Version="2025.7.1-0050-ge5aae0486e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DXJ015LMzIZM9jwoIadPvG" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
+  <NugetDependency Id="GcUVDhiRogoLa5AeQpNl0p" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
   <Patch Id="NoEhUJYssEnQSHS1ZSMkwq">
     <Canvas Id="NzkpGbcSNJUQB7JBmFeFlw" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -205,7 +205,7 @@
               <Patch Id="QvNo85FZtRML0dkQf3vqWj" Name="Create" />
               <Patch Id="GzAif1GHLLrQbMK5R5leVU" Name="Update">
                 <Pin Id="AjvWQBmwEOVL83mOwymJz6" Name="Output" Kind="OutputPin" />
-                <Pin Id="PD1m9murZUIL7OFS1d8oFv" Name="Input" Kind="InputPin" />
+                <Pin Id="K1jz5rIh9rKMf89Q3XAMi5" Name="Input" Kind="InputPin" />
               </Patch>
               <ProcessDefinition Id="LNIYyeNVdQEM8l6BQczdLH">
                 <Fragment Id="JiFYbtETHSKOVYdoStNoMM" Patch="QvNo85FZtRML0dkQf3vqWj" Enabled="true" />
@@ -247,9 +247,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QdiGCZM21QdPvCfyZFWbyI" Location="VL.Stride" Version="2025.7.1-0050-ge5aae0486e" />
-  <NugetDependency Id="T7a6HABfeD6OoWI9QjW5GS" Location="VL.Skia" Version="2025.7.1-0050-ge5aae0486e" />
-  <NugetDependency Id="Vbd7KMPeO8HNomOxVOkBZn" Location="VL.Stride.TextureFX" Version="2025.7.1-0050-ge5aae0486e" />
+  <NugetDependency Id="QdiGCZM21QdPvCfyZFWbyI" Location="VL.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="T7a6HABfeD6OoWI9QjW5GS" Location="VL.Skia" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="Vbd7KMPeO8HNomOxVOkBZn" Location="VL.Stride.TextureFX" Version="2025.7.1-0068-gd2a9c47d9c" />
   <PlatformDependency Id="SsPqaOsowmPQNxRGkvHwBB" Location="mscorlib.dll" />
-  <DocumentDependency Id="PuxM2y1lgN3P3qv3S8jrfb" Location="../../TexFX-plugins.vl" />
+  <NugetDependency Id="TFYc8bapVxcMh6VSMQiQD0" Location="MyApp.Plugin.TexFX" Version="0.0.0" />
 </Document>

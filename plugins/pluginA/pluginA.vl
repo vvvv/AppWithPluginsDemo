@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VSF9BVEOb9kP3iJck3LP5B" LanguageVersion="2025.7.1-0045-g1d3fdc8040" Version="0.128">
-  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VSF9BVEOb9kP3iJck3LP5B" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
+  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
   <Patch Id="NMY4kd39pb4LkjSI4pVcoc">
     <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -48,7 +48,7 @@
           <Patch Id="JkkUunNaK3oPADH28hVHh2" Name="Create" />
           <Patch Id="LffIK32vaeQLzF1F36FW93" Name="Update">
             <Pin Id="T2FFdUDJjXFONcxg5Ehn45" Name="Layer" Kind="OutputPin" />
-            <Pin Id="ExMnSp3c3tRPlT3Di47jLT" Name="Paint" Kind="InputPin" />
+            <Pin Id="BPn0Nrf8L6kL8N76OfQWPM" Name="Paint" Kind="InputPin" />
           </Patch>
           <Link Id="UIhIcFRRHVoLBlayoYI8hc" Ids="AhqYYo2rorwLEEie8eX1J8,IOpQUkbCYscLOHND0ZCqbw" />
           <Link Id="PC7yxrcNEtbQSE3twlSwkw" Ids="IOpQUkbCYscLOHND0ZCqbw,T2FFdUDJjXFONcxg5Ehn45" IsHidden="true" />
@@ -87,5 +87,5 @@
       </Patch>
     </Node>
   </Patch>
-  <DocumentDependency Id="AgBd1b9eI5XMA40jcgU3uS" Location="../../Layer-plugins.vl" />
+  <NugetDependency Id="DcIEFLKBdu0Pk6PPUUJ6K2" Location="MyApp.Plugin.Layer" Version="0.0.0" />
 </Document>

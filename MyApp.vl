@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.1-0047-ga6403b876a" Version="0.128">
-  <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.1-0047-ga6403b876a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GhwLHISSBvZO9K4zk9fhDU" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
+  <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
   <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
     <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="Osxg9b2yvgVNk8lZUzOdcc">
         <Canvas Id="BMOEJixDGh8Ov0rWsKQl0q" CanvasType="Group">
-          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="292,367,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\myApp\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
+          <Pad Id="QiiTSAKzqbJL9EB8jzORW1" Bounds="292,367,489,211" ShowValueBox="true" isIOBox="true" Value="This is the file we use for export. &#xD;&#xA;It has no direct plugin references. &#xD;&#xA;&#xD;&#xA;It loads them via the subfolders of&#xD;&#xA;VL.PluginHostDemo\exported\MyApp\plugins&#xD;&#xA;&#xD;&#xA;Plugins need to get exported one by one into this folder.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -25,9 +25,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="311,230,54,19" Id="Ui7NqUKxRq5NETV1hpNyat">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="myApp" />
+              <Choice Kind="ProcessAppFlag" Name="MyAppHost" />
             </p:NodeReference>
             <Pin Id="MSyppyW6QYtLohCojHD2pC" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UGRaHkHp1ESPuqcvXVUahs" Name="Is Develop" Kind="InputPin" />
@@ -42,9 +42,10 @@
       </Patch>
     </Node>
   </Patch>
-  <DocumentDependency Id="EhoG6RIuq2fL2qA6WR3d6n" Location="./host.vl" />
-  <NugetDependency Id="B9t1wisjgP3LJaSy4wkRww" Location="VL.ImGui.Skia" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="LAOo2jTLRAPPuTj3beLED8" Location="VL.Skia" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="KUJTyXdSFslLXBVcRJyxIX" Location="VL.LogView" Version="2025.7.1-0047-ga6403b876a" />
-  <NugetDependency Id="K613sqJPsqQPPJmAcfGzFI" Location="VL.ImGui.Stride" Version="2025.7.1-0047-ga6403b876a" />
+  <NugetDependency Id="B9t1wisjgP3LJaSy4wkRww" Location="VL.ImGui.Skia" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="LAOo2jTLRAPPuTj3beLED8" Location="VL.Skia" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="KUJTyXdSFslLXBVcRJyxIX" Location="VL.LogView" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="K613sqJPsqQPPJmAcfGzFI" Location="VL.ImGui.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="DgvXsKaEBSnOFr7U08qWFe" Location="MyApp.Host" Version="0.0.0" />
+  <NugetDependency Id="VXY2ctVinIUMf6RDM7Cmd8" Location="VL.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
 </Document>
