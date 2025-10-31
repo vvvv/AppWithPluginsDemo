@@ -43,7 +43,7 @@ Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/ref
 
 ## Guidelines for development
 - Keep your interfaces as minimal as possible. Make sure they only reference packages that they actually need. This helps to keep the output folder small. If you have multiple plugin interfaces using different technologies think about placing them in seperate VL files.
-- Don't add a reference to an already exported plugin.dll from within your development environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
+- Make sure that `PluginDev.vl` always only references the .vl file of a plugin, but never an exported .dll of a plugin. Ignoring this, may lead to a `TypeLoadException`.
 - Don't mix vvvv versions: All plugins need to be exported with the exact version of vvvv that the main app has been exported with! Reason: APIs provided by vvvv and used by your plugins could change in between versions and break compatibility. You most likely will see `MissingMethodException` or `TypeLoadException` in case that happens.
 - Don't mix NuGet package versions across plugins and the main app: Build a list of versions of NuGet packages the main app is using and therefore all plugins should also use if they need the package.
 - You find the folders of the exported plugins containing too many .dlls? Indeed you may consider stripping plugins of duplicated dlls, but be aware: If you have a single known host application, you can strip plugins of .dlls the host already provides. But consider the case of multiple host apps that understand the same plugins: In this case you need to be more considerate...
@@ -56,7 +56,7 @@ Feel free to [get in touch](https://vvvv.org/support/) if any of these bug you:
 - "Rescan Plugins" button in `MyApp` does not work for TexFX plugins
 - Plugins referencing VL.Stride will contain a Stride bundle (data\db\default.bundle) which is quite big
 - Untested: A plugin that makes use of native dll
-- `MyApp` needs a reference to `VL.Stride` or the exported app might not run. This seems to be an issue with source package pre-compilation. Probably not an issue if `MyApp.Host` would be a regular nuget package.
+- If your plugins make use of VL.Stride you will also have to reference VL.Stride from `MyApp` or the exported app might not run. This seems to be an issue with source package pre-compilation. Probably not an issue if `MyApp.Host` would be a regular (ie. not source package) nuget package.
 
 ## Possible improvements
 Feel free to [get in touch](https://vvvv.org/support/) if any of these are interesting to you:
