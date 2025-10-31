@@ -1,7 +1,17 @@
 # PluginHostDemo
 Demonstrates how to build an application using vvvv that can load binary plugins (dlls) that were also exported from vvvv.  
 
-## Overview
+## Introduction
+The application in this repository is demoing a most simplistic but fully working example:
+
+It can host plugins based on different datatypes:
+- Skia Layer
+- Texture
+- AudioSignal
+  
+For each of those types of plugins the app shows a drop-down that lists all the available plugins that it found in dedicated `\plugins` folder on startup. By choosing one of the entries you can specify which of the plugins is running, while all other plugins are not being executed. 
+
+## Repository overview
 - The core of the application is made out of several packages (located in `\core`) which gets passed as a package repository to vvvv. By structuring the application that way we get several benefits
   - Reduced startup time during plugin development (vvvv pre-compiles packages by default)
   - External plugin development can easily be achieved by publishing the core packages on a nuget feed
@@ -31,7 +41,7 @@ The `\plugins` folder with example plugins:
 
 Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/reference/hde/exporting.html#the-commandline-compiler) to automate deployment of the app and plugins.
 
-## Guidelines
+## Guidelines for development
 - Keep your interfaces as minimal as possible. Make sure they only reference packages that they actually need. This helps to keep the output folder small. If you have multiple plugin interfaces using different technologies think about placing them in seperate VL files.
 - Don't add a reference to an already exported plugin.dll from within your development environment. Because this plugin.dll would require a specific interfaces.dll which during dev time is not available.
 - Don't mix vvvv versions: All plugins need to be exported with the exact version of vvvv that the main app has been exported with! Reason: APIs provided by vvvv and used by your plugins could change in between versions and break compatibility. You most likely will see `MissingMethodException` or `TypeLoadException` in case that happens.
