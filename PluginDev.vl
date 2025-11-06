@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Re2NBGhtihVPKL4uedMeqw" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
-  <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Re2NBGhtihVPKL4uedMeqw" LanguageVersion="2025.7.1-0088-gfe00ee762d" Version="0.128">
+  <NugetDependency Id="Me7d6FoXjOpMhqAuYyKe20" Location="VL.CoreLib" Version="2025.7.1-0088-gfe00ee762d" />
   <Patch Id="JIle0YnAG42LbPGGrl2Vo8">
     <Canvas Id="J0AqgRcb6bQL9WwLlqvZuT" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -42,16 +42,17 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="S3jCYLYv2PjMeE6cpFcU9f" Location="VL.ImGui.Skia" Version="2025.7.1-0068-gd2a9c47d9c" />
-  <NugetDependency Id="ARbC68xZGksO4oMWNr1Rti" Location="VL.Skia" Version="2025.7.1-0068-gd2a9c47d9c" />
-  <NugetDependency Id="TGbGH1sIHrpNnhdetYmZom" Location="VL.ImGui.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
-  <NugetDependency Id="GMNSYTyI7P5OWo55lFou0l" Location="VL.Stride.TextureFX" Version="2025.7.1-0068-gd2a9c47d9c" />
-  <DocumentDependency Id="LT1ZsBIjhlIOHQCfCMUEkb" Location="./plugins/Ana/Ana.vl" />
+  <NugetDependency Id="S3jCYLYv2PjMeE6cpFcU9f" Location="VL.ImGui.Skia" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="ARbC68xZGksO4oMWNr1Rti" Location="VL.Skia" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="TGbGH1sIHrpNnhdetYmZom" Location="VL.ImGui.Stride" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="GMNSYTyI7P5OWo55lFou0l" Location="VL.Stride.TextureFX" Version="2025.7.1-0088-gfe00ee762d" />
   <DocumentDependency Id="GDSrpdJvuBcNCPnKjCc7TF" Location="./plugins/pluginA/pluginA.vl" />
   <DocumentDependency Id="QmqUJSHzWtvMBrQSELe5ui" Location="./plugins/pluginB/pluginB.vl" />
   <DocumentDependency Id="B4ssw44BMfXLPGraE2yE5g" Location="./plugins/Posterize/Posterize.vl" />
   <DocumentDependency Id="KA9TgF11xtTNfcGwzfrnM3" Location="./plugins/TAL-NoiseMaker/TAL-NoiseMaker.vl" />
   <DocumentDependency Id="SOsvNb5ERhxNErCdVJCBdz" Location="./plugins/TexFXWithAssets/TexFXWithAssets.vl" />
   <NugetDependency Id="TfFZyh7LH1iN1NsrOlpPtR" Location="MyApp.Host" Version="0.0.0" />
-  <NugetDependency Id="VJ1YIatp0mBPBmuC2l5Pez" Location="VL.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
+  <NugetDependency Id="VJ1YIatp0mBPBmuC2l5Pez" Location="VL.Stride" Version="2025.7.1-0088-gfe00ee762d" />
+  <DocumentDependency Id="Pt0ng3tsLIgN0K00FmoNDw" Location="./plugins/Anaglyph/Anaglyph.vl" />
+  <DocumentDependency Id="LppkePMsk8tPSd9PTUGPh4" Location="./plugins/Kaleidoscope/Kaleidoscope.vl" />
 </Document>

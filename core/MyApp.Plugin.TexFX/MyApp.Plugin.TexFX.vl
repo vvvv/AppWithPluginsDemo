@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KQ43dw4BoWUL70NJkjOc8v" LanguageVersion="2025.7.1-0047-ga6403b876a" Version="0.128">
-  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.1-0047-ga6403b876a" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KQ43dw4BoWUL70NJkjOc8v" LanguageVersion="2025.7.1-0088-gfe00ee762d" Version="0.128">
+  <NugetDependency Id="VGlOLraCwGjLfdko6Wwvl4" Location="VL.CoreLib" Version="2025.7.1-0088-gfe00ee762d" />
   <Patch Id="NMY4kd39pb4LkjSI4pVcoc">
     <Canvas Id="OjnDhMESo4vM0KsdUOM3VU" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -16,6 +16,7 @@
           <Canvas Id="GbTj5NS3pZOOPNMhtnS12Z" CanvasType="Group">
             <ControlPoint Id="OrkG5pWAD4pPU5V1tFJEe0" Bounds="419,460" />
             <ControlPoint Id="LQ1yLKOMEZuMWQDK6Rvz2j" Bounds="419,340" />
+            <ControlPoint Id="IJxTCJcON1PQZMeF6DAoM4" Bounds="522,340" />
           </Canvas>
           <ProcessDefinition Id="HK1BE8EOTl8NzgeDuELapv" IsHidden="true">
             <Fragment Id="I82o0UfItN6MtayCLFAojV" Patch="LlcFIS9axujNjOLYzSTZ8W" />
@@ -31,9 +32,15 @@
                 <Choice Kind="TypeFlag" Name="Texture" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="QAqJL5JvpetONs33be4f72" Name="Value" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
           </Patch>
           <Link Id="U2KWjUmsDUcMYe3eL7BrD7" Ids="OrkG5pWAD4pPU5V1tFJEe0,EgNmX7GdFJxNxiEGyvUQCJ" IsHidden="true" />
           <Link Id="VMvl8Yitia1Ne33TlIdllw" Ids="Ih7XHK5eUaHNqfbhdX9eOz,LQ1yLKOMEZuMWQDK6Rvz2j" IsHidden="true" />
+          <Link Id="HVHMrBHQEPJPz1XQ24HjTL" Ids="QAqJL5JvpetONs33be4f72,IJxTCJcON1PQZMeF6DAoM4" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -58,5 +65,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RmNYP2XO3eqPMbggCdJHRE" Location="VL.Stride" Version="2025.7.1-0047-ga6403b876a" />
+  <NugetDependency Id="RmNYP2XO3eqPMbggCdJHRE" Location="VL.Stride" Version="2025.7.1-0088-gfe00ee762d" />
 </Document>
