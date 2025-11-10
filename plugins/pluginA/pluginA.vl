@@ -56,7 +56,7 @@
                     <Patch Id="P7CnVnEIUptO8uy3OGfmtW" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="ChIYe3A06mpPmYCa57Sxy0" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="249,529,65,26" Id="MtA5WPY5LRjOZLytY0Hn7I">
-                      <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="MyApp.Plugin.Layer.vl">
+                      <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="DemoApp.Plugin.Layer.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="AddCircle" />
                       </p:NodeReference>
@@ -105,7 +105,7 @@
                   <Pin Id="C8H2T4xaKZZMBqZl6RZF4W" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="398,660,59,19" Id="EMWSsXSajRsQVc6SdNmLoL">
-                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="MyApp.Plugin.Layer.vl">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="DemoApp.Plugin.Layer.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="DrawPath" />
                   </p:NodeReference>
@@ -116,7 +116,7 @@
                   <Pin Id="Q4muYWPqwnzP8S3x5NRl4t" Name="Output" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="425,590,56,19" Id="FHIw1LpV7XAMH3J8kMPjLR">
-                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="MyApp.Plugin.Layer.vl">
+                  <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="DemoApp.Plugin.Layer.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="Category" Name="Paint" NeedsToBeDirectParent="true">
                       <p:OuterCategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
@@ -188,7 +188,7 @@
               <Pin Id="E8KGku5UhzzQDokgwoDC8s" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="398,730,45,19" Id="CMjXZMT97srO56nqOPry9J">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="MyApp.Plugin.Layer.vl">
+              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="DemoApp.Plugin.Layer.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
                 <Choice Kind="ProcessAppFlag" Name="Group (Spectral)" />
@@ -305,5 +305,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DcIEFLKBdu0Pk6PPUUJ6K2" Location="MyApp.Plugin.Layer" Version="0.0.0" />
+  <NugetDependency Id="CtU5oV2A0ZkMHv4Ef6JSOn" Location="DemoApp.PluginInterface.Layer" Version="0.0.0" />
 </Document>

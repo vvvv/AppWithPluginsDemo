@@ -777,7 +777,7 @@
                     <Patch Id="JGJjTcz8JEWNp1lk1HIrQj" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="DkTJEYoCMdpNBL5hjRrYqj" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="128,492,81,19" Id="STex2pBH4PRPpk0pnZageU">
-                      <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
+                      <p:NodeReference LastCategoryFullName="Main" LastDependency="DemoApp.Host.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessNode" Name="PluginsTab" />
                       </p:NodeReference>
@@ -1259,10 +1259,10 @@
       </Node>
       <!--
 
-    ************************ MyAppHost ************************
+    ************************ DemoAppHost ************************
 
 -->
-      <Node Name="MyAppHost" Bounds="490,541" Id="VEACpVuhYSWLA7gtoYEijJ">
+      <Node Name="DemoAppHost" Bounds="490,541" Id="VEACpVuhYSWLA7gtoYEijJ">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -1301,7 +1301,7 @@
               </p:NodeReference>
               <Pin Id="PE3W9kUsOapOapkTqxqIm6" Name="Default" Kind="OutputPin" />
             </Node>
-            <Node Bounds="367,940,145,19" Id="PQTyB5E4d6nOf32F0u6sNL">
+            <Node Bounds="367,1010,145,19" Id="PQTyB5E4d6nOf32F0u6sNL">
               <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="interfaces.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -1372,7 +1372,7 @@
               </p:NodeReference>
               <Pin Id="RfDOPOykaYJPsIwc3pqskl" Name="Is Exported" Kind="OutputPin" />
             </Node>
-            <Node Bounds="407,870,45,19" Id="P7fK25QhoFdQat9zMkt4o9">
+            <Node Bounds="407,910,45,19" Id="P7fK25QhoFdQat9zMkt4o9">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Switch (Boolean)" />
@@ -1519,8 +1519,8 @@
               <Pin Id="HwuT3jO3Uo8MoQ9zEW4uNh" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="I6vp2E4CNAeNoHLBIq8a33" Name="Registered Types" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="B2NbwnXeA2ROk0vl9Qjo2t" Bounds="138,850" />
-            <Node Bounds="387,900,45,19" Id="LlimI8uZlx5P94BukoeKrT">
+            <ControlPoint Id="B2NbwnXeA2ROk0vl9Qjo2t" Bounds="296,860" />
+            <Node Bounds="387,970,45,19" Id="LlimI8uZlx5P94BukoeKrT">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Switch (Boolean)" />
@@ -1530,8 +1530,8 @@
               <Pin Id="PUHlWNnoYy6Mu6RtDIyk9s" Name="Input 2" Kind="InputPin" DefaultValue="myApp - plugindevelop" />
               <Pin Id="OMy1AVnqLpuMFXTYamQSlH" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="367,1010,49,19" Id="Uh1TpZWF4jTQCJXZsOn7us">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
+            <Node Bounds="367,1080,49,19" Id="Uh1TpZWF4jTQCJXZsOn7us">
+              <p:NodeReference LastCategoryFullName="Main" LastDependency="DemoApp.Host.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Main" NeedsToBeDirectParent="true" />
                 <Choice Kind="ProcessAppFlag" Name="SetIcon" />
@@ -1541,9 +1541,24 @@
               <Pin Id="EAmGEamRSzLOKndDvcnnpF" Name="Icon" Kind="InputPin" />
               <Pin Id="IUiyBmFogNUMJXI9JprWF4" Name="Input" Kind="OutputPin" />
             </Node>
-            <Pad Id="JC2SbohzWLSNzBVAuDWJcY" Comment="Icon" Bounds="413,990,92,15" ShowValueBox="true" isIOBox="true" Value="..\..\MyApp.ico">
+            <Pad Id="JC2SbohzWLSNzBVAuDWJcY" Comment="Icon" Bounds="413,1060,92,15" ShowValueBox="true" isIOBox="true" Value="..\..\DemoApp.ico">
               <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="KBlJhOy6YO7QMQE5UnhnXd" Comment="" Bounds="429,870,123,15" ShowValueBox="true" isIOBox="true" Value="DemoApp - export me">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="MrFxJGe8atAMelydtsdFsK" Comment="" Bounds="449,890,56,15" ShowValueBox="true" isIOBox="true" Value="DemoApp">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="GCcIcorE3DaPhiuMqxM58u" Comment="" Bounds="429,950,141,15" ShowValueBox="true" isIOBox="true" Value="DemoApp - plugindevelop">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
           </Canvas>
@@ -1587,6 +1602,9 @@
           <Link Id="HymYJEmiHx4L0z5fvfh9WU" Ids="Fa0pd1jYFCmOddJZsyDwSU,PHlWWRVYsTONzPb7EkdM1d" />
           <Link Id="Mva0AulMOYIQaFgd5xQbzy" Ids="PewDzIaMqloNMCBpccP5nI,MmJ2WegGeRlNFjVCRf2tWX" />
           <Link Id="SJbQ67IhBLHPXswh3FRzp9" Ids="JC2SbohzWLSNzBVAuDWJcY,EAmGEamRSzLOKndDvcnnpF" />
+          <Link Id="S2aMeC4piZ1P4uCuP6hYHq" Ids="KBlJhOy6YO7QMQE5UnhnXd,Tx0tQuYg3NKNRAaf7iaBs7" />
+          <Link Id="M6FXxiosBXQNFuBsgAxYpH" Ids="MrFxJGe8atAMelydtsdFsK,PvtcT0PAGthMRNKEulor86" />
+          <Link Id="UoRKVsT1tumP5SL7fJAkwF" Ids="GCcIcorE3DaPhiuMqxM58u,PUHlWNnoYy6Mu6RtDIyk9s" />
         </Patch>
       </Node>
       <!--
@@ -1772,7 +1790,7 @@
                   <Pin Id="HnE4R6nmExgLmrYamX9Thj" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="154,1161,69,19" Id="MO5Dq5KXXlyQJc9Wc9DRjp">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="DemoApp.Host.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessNode" Name="DrawBorder" />
                   </p:NodeReference>
@@ -2193,7 +2211,7 @@
                   <Pin Id="E1sZayNTfYBOz3ktDKSqWz" Name="Value" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="658,1220,69,19" Id="J6MLECi4nAHL5rg2LAS8ZG">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="DemoApp.Host.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessNode" Name="DrawBorder" />
                   </p:NodeReference>
@@ -2455,7 +2473,7 @@
                   <Pin Id="LQ2A0gdWN5sOVbvxL3PqON" Name="Context" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1593,1350,69,19" Id="QBWSk0sSNBoNpMm73SpHam">
-                  <p:NodeReference LastCategoryFullName="Main" LastDependency="MyApp.Host.vl">
+                  <p:NodeReference LastCategoryFullName="Main" LastDependency="DemoApp.Host.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessNode" Name="DrawBorder" />
                   </p:NodeReference>
@@ -2536,7 +2554,7 @@
                   <Pin Id="PLX3IdbcSupMLkWrQoBbMt" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1735,1350,87,19" Id="FYqaSTUvaYnNOkWzJt7qEz">
-                  <p:NodeReference LastCategoryFullName="Main.PluginsTab" LastDependency="MyApp.Host.vl">
+                  <p:NodeReference LastCategoryFullName="Main.PluginsTab" LastDependency="DemoApp.Host.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="AudioVisualizer" />
                   </p:NodeReference>
@@ -3657,7 +3675,7 @@
               <Pin Id="NxpfRD7FUtlLyUKwIpjhx3" Name="Simulate" Kind="InputPin" />
               <Pin Id="UyDesCHGWD5Mt5onCRBkuU" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="RSKoU9qr9boMe36a4oo8xe" Bounds="646,310,101,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\\">
+            <Pad Id="RSKoU9qr9boMe36a4oo8xe" Bounds="646,310,114,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\\">
               <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Path" />
                 <FullNameCategoryReference ID="IO" />
@@ -3732,9 +3750,9 @@
   <NugetDependency Id="HiOdVA19x3CMR7OH5WYC7Y" Location="VL.Skia" Version="2025.7.1-0088-gfe00ee762d" />
   <NugetDependency Id="UGG1Q2sbXmVOwoaX4M5V7Z" Location="VL.Audio" Version="1.9.14" />
   <NugetDependency Id="C2NUg3KRGcsP3pAoXPLW4Z" Location="VL.LogView" Version="2025.7.1-0088-gfe00ee762d" />
-  <NugetDependency Id="A3vK5iI8wUMM3UcwJxiyXP" Location="MyApp.Plugin.Audio" Version="0.0.0" />
-  <NugetDependency Id="GmVuZvwXz9JMGHILIn7ykL" Location="MyApp.Plugin.Layer" Version="0.0.0" />
-  <NugetDependency Id="USAyJmCVY9jN0VnaKsNKVD" Location="MyApp.Plugin.TexFX" Version="0.0.0" />
   <PlatformDependency Id="OCwRbDIrsOrM5VIGkSV1AU" Location="System.Drawing" />
   <PlatformDependency Id="Uw38H7VbuLLPYa1xGy5fn4" Location="System.Windows.Forms" />
+  <NugetDependency Id="VnmejCQxK6cNmwjupWLsvI" Location="DemoApp.PluginInterface.Audio" Version="0.0.0" />
+  <NugetDependency Id="P0wdITpGgqZLED6yinFwkb" Location="DemoApp.PluginInterface.Layer" Version="0.0.0" />
+  <NugetDependency Id="Cx7YsAOKSzTLMcBkYOGrni" Location="DemoApp.PluginInterface.TexFX" Version="0.0.0" />
 </Document>

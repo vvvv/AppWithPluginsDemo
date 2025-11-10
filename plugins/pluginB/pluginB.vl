@@ -315,6 +315,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Dtz6AoVumcEP9FFYJuQYfn" Location="MyApp.Plugin.Layer" Version="0.0.0" />
   <NugetDependency Id="QaommEg3Z0LLaweZ49mQFL" Location="VL.Skia" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="ApoKeGfbkxFLko6GLIUVaY" Location="DemoApp.PluginInterface.Layer" Version="0.0.0" />
 </Document>

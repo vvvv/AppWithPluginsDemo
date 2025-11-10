@@ -204,5 +204,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="Tjje0uumpf3OhH7Gtu2iNU" Location="VL.Stride.TextureFX" Version="2025.7.1-0088-gfe00ee762d" />
-  <NugetDependency Id="CRY1Rbv7lVoLN0pWa4cgPO" Location="MyApp.Plugin.TexFX" Version="0.0.0" />
+  <NugetDependency Id="Axz1kwWnBKuNyeBXUeHgJc" Location="DemoApp.PluginInterface.TexFX" Version="0.0.0" />
 </Document>

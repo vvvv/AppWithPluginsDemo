@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0068-gd2a9c47d9c" Version="0.128">
-  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.1-0068-gd2a9c47d9c" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0088-gfe00ee762d" Version="0.128">
+  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.1-0088-gfe00ee762d" />
   <Patch Id="OrgKWCFF7IEM3jlv00AmKZ">
     <Canvas Id="GNE8SToFsAnN8EATT4aCBt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -129,6 +129,7 @@
               <Patch Id="CY0tLQKsthVL8oRIcqeyu2" Name="Update">
                 <Pin Id="Fi0pxx8E1VkLhO8BYSd7lm" MergeId="2176" Name="Input" Kind="InputPin" />
                 <Pin Id="AVSEGDihn3hLLDg49vFIWr" MergeId="2200" Name="Output" Kind="OutputPin" />
+                <Pin Id="IXQOwnsbJlhLuKLJ45OScU" Name="Value" Kind="InputPin" />
               </Patch>
               <Link Id="V0GpaFYRYz0QKsQ8Z4G0O3" Ids="GyzZHTSHcx5NVas7p3kMeB,LqVoxxDTs5WPmBdZy75zqU" />
               <Link Id="AcVkUkMtOybPNKs2xKfo5T" Ids="Fi0pxx8E1VkLhO8BYSd7lm,GyzZHTSHcx5NVas7p3kMeB" IsHidden="true" />
@@ -152,6 +153,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.1-0068-gd2a9c47d9c" />
-  <NugetDependency Id="Vam0Yr7Hti5MSkgXH8urgn" Location="MyApp.Plugin.TexFX" Version="0.0.0" />
+  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="Bs692g3UcEULZMimRAtDYJ" Location="DemoApp.PluginInterface.TexFX" Version="0.0.0" />
 </Document>
