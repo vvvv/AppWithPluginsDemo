@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="DWEh5hYyvYqPw92iuC0ru3" LanguageVersion="2025.7.1-0088-gfe00ee762d" Version="0.128">
-  <NugetDependency Id="QLcgaR1kaeLO6sOPd3V4KI" Location="VL.CoreLib" Version="2025.7.1-0088-gfe00ee762d" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="DWEh5hYyvYqPw92iuC0ru3" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="QLcgaR1kaeLO6sOPd3V4KI" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="RxnT4CPcaW9OSokugQutdB">
     <Canvas Id="OmMnoKHbgtCLvc2UCGtO4d" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -80,14 +80,26 @@
               <Pin Id="M0NRf4g0KKSLaczZWwLznC" Name="Apply" Kind="InputPin" />
               <Pin Id="Fevv9RdwjHWQWbgMbrmirG" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="DVer3ctpffGPgbZ89znvqC" Bounds="732,319" />
-            <Node Bounds="730,340,62,19" Id="Ix87HNZOlQZMJsheJhtOT5">
+            <ControlPoint Id="DVer3ctpffGPgbZ89znvqC" Bounds="732,259" />
+            <Node Bounds="730,280,62,19" Id="Ix87HNZOlQZMJsheJhtOT5">
               <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToFloat32" />
               </p:NodeReference>
               <Pin Id="UtEfvFzSGH8NwjiSzFF2mE" Name="Input" Kind="InputPin" />
               <Pin Id="CyDI4VctRBMO2ZUeMj37dH" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="730,331,85,19" Id="Dkvinjqz9UUMcliSHbsQ4U">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Map" />
+              </p:NodeReference>
+              <Pin Id="O6vQLJq00kiMS6j2YRVpqP" Name="Input" Kind="InputPin" />
+              <Pin Id="B4QGBKntUk3MFPqmA25lUx" Name="Input Minimum" Kind="InputPin" />
+              <Pin Id="IPShDRDsSZGN1Gcz9v0pPm" Name="Input Maximum" Kind="InputPin" DefaultValue="20" />
+              <Pin Id="NM1B0o8vk1VOesYVmoMHYE" Name="Output Minimum" Kind="InputPin" />
+              <Pin Id="EwsFKL6LZhFNEDPWSPAUHy" Name="Output Maximum" Kind="InputPin" DefaultValue="6" />
+              <Pin Id="OSbrX76iRz5MzNWfWABpDe" Name="Output" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="LdxtvYgwjUrLTQ2vVWSZ73" Name="Create" />
@@ -109,7 +121,8 @@
           <Link Id="K6uPsD9q6kHQTPJSZPDK8l" Ids="BDUDfrtajcYL4azn8MQom1,OdsxlPnccaUONdDqG79pjA" />
           <Link Id="JVIJeofqsc2Mv2XSgDzWmY" Ids="QqMnkk1ey2FLAVXyGebtGP,DVer3ctpffGPgbZ89znvqC" IsHidden="true" />
           <Link Id="PbW37UFgR9tLMnGr3aNO8I" Ids="DVer3ctpffGPgbZ89znvqC,UtEfvFzSGH8NwjiSzFF2mE" />
-          <Link Id="CWu7JtTuftCNHs5rEfj5DQ" Ids="CyDI4VctRBMO2ZUeMj37dH,CzB7PRxhKpQNBtIhmdGXV1" />
+          <Link Id="CWu7JtTuftCNHs5rEfj5DQ" Ids="CyDI4VctRBMO2ZUeMj37dH,O6vQLJq00kiMS6j2YRVpqP" />
+          <Link Id="MNyrVOXimeGMzvnxhC2OV3" Ids="OSbrX76iRz5MzNWfWABpDe,CzB7PRxhKpQNBtIhmdGXV1" />
         </Patch>
       </Node>
     </Canvas>
@@ -144,6 +157,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Tjje0uumpf3OhH7Gtu2iNU" Location="VL.Stride.TextureFX" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="Tjje0uumpf3OhH7Gtu2iNU" Location="VL.Stride.TextureFX" Version="2025.7.1-0103-gf49d596041" />
   <NugetDependency Id="OkZ7udztsagMLCcwJgqUvQ" Location="DemoApp.PluginInterface.TexFX" Version="0.0.0" />
 </Document>

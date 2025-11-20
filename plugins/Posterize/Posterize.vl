@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0088-gfe00ee762d" Version="0.128">
-  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.1-0088-gfe00ee762d" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MGb8OLV9lqDOxg3D7xt3oS" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="MG37fFgBgp9P39tevMoi01" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="OrgKWCFF7IEM3jlv00AmKZ">
     <Canvas Id="GNE8SToFsAnN8EATT4aCBt" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -53,21 +53,6 @@
                 </Node>
                 <ControlPoint Id="GyzZHTSHcx5NVas7p3kMeB" Bounds="454,231" />
                 <ControlPoint Id="D9TN2cPLlrrPPSugKxoZWA" Bounds="434,491" />
-                <Node Bounds="365,390,45,19" Id="Mzml6iNfEXGOjClef18ghG">
-                  <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="ProcessAppFlag" Name="LFO" />
-                  </p:NodeReference>
-                  <Pin Id="AvMjXlvvIpiQQbKN6SeE1E" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="RovJwKw6xxuPJrjrIXD6s9" Name="Clock" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="FFb4DIMKbCpMd2KUtwgEio" Name="New Clock" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="HpX3t4QOxRdOqgxuuAniWx" Name="Period" Kind="InputPin" />
-                  <Pin Id="TxYXSo5D7H1OR75I8ixeHG" Name="Pause" Kind="InputPin" />
-                  <Pin Id="AspNH5IzZggQDqYFBaUl2y" Name="Reset" Kind="ApplyPin" />
-                  <Pin Id="OfU0Uac23niLycJH4e5Fb4" Name="Phase" Kind="OutputPin" />
-                  <Pin Id="OZ3uEnbNBomNDmXk2vS08x" Name="On New Cycle" Kind="OutputPin" />
-                  <Pin Id="NgOpGX8RCcgNyUAkwbD9hf" Name="Cycles" Kind="OutputPin" />
-                </Node>
                 <Node Bounds="432,440,65,19" Id="Ia8p8rgRZqnOouGARzXMGy">
                   <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -80,7 +65,7 @@
                   <Pin Id="HQlXyYPUPLVN7Lx47mTQrL" Name="Output" Kind="OutputPin" />
                   <Pin Id="MtcgtoUncGVNVQpXnuvKQq" Name="Input 3" Kind="InputPin" />
                 </Node>
-                <Node Bounds="482,320,145,19" Id="OBjlahm17HKP6n1Stkq1b1">
+                <Node Bounds="472,340,145,19" Id="OBjlahm17HKP6n1Stkq1b1">
                   <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.Rendering.EffectShaderNodes (C:\dev\VL.PluginHostDemo\Posterize)">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessNode" Name="Poster (HSL)" />
@@ -100,7 +85,7 @@
                   <Pin Id="Id2BQ6wAHxRQJgRstso7Z2" Name="Apply" Kind="InputPin" />
                   <Pin Id="UUc8KL9TOj6L0bk1xO4Yed" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="512,350,145,19" Id="O67Hk1Chds1Pk8JPxxCRdn">
+                <Node Bounds="492,400,145,19" Id="O67Hk1Chds1Pk8JPxxCRdn">
                   <p:NodeReference LastCategoryFullName="Stride.Textures.Filter" LastDependency="VL.Stride.Rendering.EffectShaderNodes (C:\dev\VL.PluginHostDemo\Posterize)">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessNode" Name="Poster (HSV)" />
@@ -120,6 +105,22 @@
                   <Pin Id="RxEpiyhSkKHOR32cAOH16Y" Name="Apply" Kind="InputPin" />
                   <Pin Id="GguggkHlYAkQKo58tFO7ln" Name="Output" Kind="OutputPin" />
                 </Node>
+                <ControlPoint Id="LMC92JEJNVnOtanaHC33Nt" Bounds="387,340" />
+                <Pad Id="ULJ6hssLv7UO5cfEMd448s" Comment="Smooth" Bounds="534,240,35,15" ShowValueBox="true" isIOBox="true" Value="0.56">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="LHUOlm1AlYWPpuk8HJoMYO" Comment="Levels" Bounds="665,300,34,57" ShowValueBox="true" isIOBox="true" Value="9.97, 9.97, 9.97, 9.97">
+                  <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Vector4" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <Pad Id="EKPoAohoKeROCZB1nn3oh9" Comment="Levels" Bounds="664,370,35,57" ShowValueBox="true" isIOBox="true" Value="17.51, 17.51, 17.51, 17.51">
+                  <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Vector4" />
+                  </p:TypeAnnotation>
+                </Pad>
               </Canvas>
               <Patch Id="TxTS2YIdzSHLruxhNG063l" Name="Create" />
               <ProcessDefinition Id="DhLRZ9cM9T2NlsAFT6MNwp" IsHidden="true">
@@ -134,13 +135,17 @@
               <Link Id="V0GpaFYRYz0QKsQ8Z4G0O3" Ids="GyzZHTSHcx5NVas7p3kMeB,LqVoxxDTs5WPmBdZy75zqU" />
               <Link Id="AcVkUkMtOybPNKs2xKfo5T" Ids="Fi0pxx8E1VkLhO8BYSd7lm,GyzZHTSHcx5NVas7p3kMeB" IsHidden="true" />
               <Link Id="L3U0hCU7sZhOB9pYaLfRt2" Ids="D9TN2cPLlrrPPSugKxoZWA,AVSEGDihn3hLLDg49vFIWr" IsHidden="true" />
-              <Link Id="IKcXxe3dGsFL8OrOf71wbq" Ids="NgOpGX8RCcgNyUAkwbD9hf,K63uY1GNTsCPoMqv6qYdM3" />
               <Link Id="C8lJoBbThV6OXH3uXCMvMZ" Ids="BEAamnviZ7hMbBiCeTenuq,Kcqcxbmr2rjLzjZShSPdg0" />
               <Link Id="N5HKciWIqf2Ma5hvhAkL4t" Ids="GyzZHTSHcx5NVas7p3kMeB,TpANGjsZE0OQOOZAIt380D" />
               <Link Id="EFVGyNya92ULlN8J252RVH" Ids="GyzZHTSHcx5NVas7p3kMeB,NBxXbP5A73dLwzpNlSTlJq" />
               <Link Id="UnZ3Te6oM2cLIaEX2kXINh" Ids="UUc8KL9TOj6L0bk1xO4Yed,TW8T9xM67seQd2OO6tJXTG" />
               <Link Id="Dx90isMbZlEL1RE1ijbma3" Ids="GguggkHlYAkQKo58tFO7ln,MtcgtoUncGVNVQpXnuvKQq" />
               <Link Id="VcsOlzQOjmVOxZjHobilOI" Ids="HQlXyYPUPLVN7Lx47mTQrL,D9TN2cPLlrrPPSugKxoZWA" />
+              <Link Id="G56Ij2AWBtNNsLW2mSIB9U" Ids="LMC92JEJNVnOtanaHC33Nt,K63uY1GNTsCPoMqv6qYdM3" />
+              <Link Id="NiMICtJ1IWPNfxPQLdHSLN" Ids="IXQOwnsbJlhLuKLJ45OScU,LMC92JEJNVnOtanaHC33Nt" IsHidden="true" />
+              <Link Id="HW07biQud23NyHSMlZkNMk" Ids="ULJ6hssLv7UO5cfEMd448s,OBEUd5obdQyPvBqsnQUQK3" />
+              <Link Id="F4WMZYKlCrkLdTY7KKQgoD" Ids="LHUOlm1AlYWPpuk8HJoMYO,CxzQ4ywMJkQLuA2vWBChyb" />
+              <Link Id="RwGDkmDzFYQLXGvg7fNcOi" Ids="EKPoAohoKeROCZB1nn3oh9,GnZhq4b64a9MBzvogVrdcS" />
             </Patch>
           </Node>
         </Canvas>
@@ -153,6 +158,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.1-0088-gfe00ee762d" />
+  <NugetDependency Id="D0x7mQcxtFpPyD74pQVGFH" Location="VL.Stride" Version="2025.7.1-0103-gf49d596041" />
   <NugetDependency Id="Bs692g3UcEULZMimRAtDYJ" Location="DemoApp.PluginInterface.TexFX" Version="0.0.0" />
 </Document>
