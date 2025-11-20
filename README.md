@@ -32,11 +32,11 @@ The `\plugins` folder with example plugins:
 
 ## Running the demo
 ### Prepare
-- Run vvvv with [package-repositories](https://thegraybook.vvvv.org/reference/extending/contributing.html#source-package-repositories) pointing to the `\core` folder which will load all packages inside that folder as source packages: `vvvv.exe --package-repositories MY_REPOS\VL.PluginHostDemo\core`
+- Run vvvv with [package-repositories](https://thegraybook.vvvv.org/reference/extending/contributing.html#source-package-repositories) pointing to the `\core` folder which will load all packages inside that folder as source packages: `vvvv.exe --package-repositories MY_REPOS\AppWithPluginsDemo\core`
 - Export `DemoApp.vl`
-  - Notice how it is set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp`
+  - Notice how it is set-up to export into `MY_REPOS\AppWithPluginsDemo\exported\DemoApp`
 - Open the individual plugins from the `\plugins` folder and export them 
-  - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp\plugins`
+  - Notice how they are set-up to export into `MY_REPOS\AppWithPluginsDemo\exported\DemoApp\plugins`
   - Notice how `TexFXWithAssets` includes a .targets file that makes sure the assets folder is also copied over
 ### Run
 - When running the exported `DemoApp`, it will look for a `plugins` folder next to itself and search for plugin dlls inside that folder
@@ -86,5 +86,5 @@ build EditorAndPackages
 Compile DemoApp.vl with
 ```
 cd bin\win-x64\vvvv_gamma_MY_VERSION
-vvvvc MY_REPOS\VL.PluginHostDemo\DemoApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
+vvvvc MY_REPOS\AppWithPluginsDemo\DemoApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
 ```
