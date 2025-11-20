@@ -1,5 +1,7 @@
-# PluginHostDemo
+# AppWithPluginsDemo
 Demonstrates how to build an application using vvvv that can load binary plugins (dlls) that were also exported from vvvv.  
+
+Requires vvvv gamma > 7.1 preview 103
 
 ## Introduction
 The application in this repository is demoing a most simplistic but fully working example:
@@ -16,10 +18,10 @@ For each of those types of plugins the app shows a drop-down that lists all the 
   - Reduced startup time during plugin development (vvvv pre-compiles packages by default)
   - External plugin development can easily be achieved by publishing the core packages on a nuget feed
   - External and in-house plugin development use the same workflow (package references)
-- The main application: `MyApp.vl` references `MyApp.Host`. This is what is being exported to deploy the app.
-- A separate document for developing plugins: `PluginDev.vl`. The same as above but: Also references any plugin .vl documents directly to work on them. This file is a development file only, ie. not intended to use for exporting `MyApp`.
-- The host package `MyApp.Host` must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
-- Plugin interfaces are contained in `MyApp.Plugin.Layer`, `MyApp.Plugin.TexFX`, `MyApp.Plugin.Audio`
+- The main application: `DemoApp.vl` references `DemoApp.Host`. This is what is being exported to deploy the app.
+- A separate document for developing plugins: `PluginDev.vl`. The same as above but: Also references any plugin .vl documents directly to work on them. This file is a development file only, ie. not intended to use for exporting `DemoApp`.
+- The host package `DemoApp.Host` must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
+- Plugin interfaces are contained in `DemoApp.PluginInterface.Layer`, `DemoApp.PluginInterface.TexFX`, `DemoApp.PluginInterface.Audio`
 
 The `\plugins` folder with example plugins:
 - `pluginA`, `pluginB` contain Skia Layer plugins
@@ -31,13 +33,15 @@ The `\plugins` folder with example plugins:
 ## Running the demo
 ### Prepare
 - Run vvvv with [package-repositories](https://thegraybook.vvvv.org/reference/extending/contributing.html#source-package-repositories) pointing to the `\core` folder which will load all packages inside that folder as source packages: `vvvv.exe --package-repositories MY_REPOS\VL.PluginHostDemo\core`
-- Export `MyApp.vl`
-  - Notice how it is set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\MyApp`
+- Export `DemoApp.vl`
+  - Notice how it is set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp`
 - Open the individual plugins from the `\plugins` folder and export them 
-  - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\MyApp\plugins`
+  - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp\plugins`
   - Notice how `TexFXWithAssets` includes a .targets file that makes sure the assets folder is also copied over
 ### Run
-- When running the exported `MyApp`, it will look for a `plugins` folder next to itself and search for plugin dlls inside that folder
+- When running the exported `DemoApp`, it will look for a `plugins` folder next to itself and search for plugin dlls inside that folder
+### Developing plugins
+- Open "PluginDev.vl", reference the plugin you want to work on and operate on it live
 
 Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/reference/hde/exporting.html#the-commandline-compiler) to automate deployment of the app and plugins.
 
@@ -53,10 +57,10 @@ Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/ref
 ## Known Issues
 Feel free to [get in touch](https://vvvv.org/support/) if any of these bug you:
 - A plugin needs to have a dummy entry point in order to show up in the export dialog. A simple comment in the application patch is enough.
-- "Rescan Plugins" button in `MyApp` does not work for TexFX plugins
+- "Rescan Plugins" button in `DemoApp` does not work for TexFX plugins
 - Plugins referencing VL.Stride will contain a Stride bundle (data\db\default.bundle) which is quite big
 - Untested: A plugin that makes use of native dll
-- If your plugins make use of VL.Stride you will also have to reference VL.Stride from `MyApp` or the exported app might not run. This seems to be an issue with source package pre-compilation. Probably not an issue if `MyApp.Host` would be a regular (ie. not source package) nuget package.
+- If your plugins make use of VL.Stride you will also have to reference VL.Stride from `DemoApp` or the exported app might not run. This seems to be an issue with source package pre-compilation. Probably not an issue if `DemoApp.Host` would be a regular (ie. not source package) nuget package.
 
 ## Possible improvements
 Feel free to [get in touch](https://vvvv.org/support/) if any of these are interesting to you:
@@ -65,7 +69,7 @@ Feel free to [get in touch](https://vvvv.org/support/) if any of these are inter
 Currently plugins cannot be removed or updated at runtime. We could explore loading the plugins via a separate [assembly load context ](https://learn.microsoft.com/en-us/dotnet/core/dependency-loading/understanding-assemblyloadcontext) to allow this. It could also allow different plugins to use different versions of the same package. Beware though: Different versions of a package may come with the same shader, which would still pose potential problems, because remember: Shader names need to be globally unique!
 
 ### Develop plugins without source access
-Currently anyone developing a plugin needs full source access to `MyApp`. In case this is not practical what would be needed is a way to ship pre-compiled NuGet packages that don't contain the .vl files
+Currently anyone developing a plugin needs full source access to `DemoApp`. In case this is not practical what would be needed is a way to ship pre-compiled NuGet packages that don't contain the .vl files
 
 ### Develop plugins live in the host
 Imagine being able to develop plugins directly in the host app by opening a VL editor...
@@ -79,8 +83,8 @@ Compile vvvv itself with
 cd MY_REPOS\vvvv
 build EditorAndPackages
 ```
-Compile myApp.vl with
+Compile DemoApp.vl with
 ```
 cd bin\win-x64\vvvv_gamma_MY_VERSION
-vvvvc MY_REPOS\VL.PluginHostDemo\myApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
+vvvvc MY_REPOS\VL.PluginHostDemo\DemoApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
 ```
