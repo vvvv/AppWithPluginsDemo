@@ -98,12 +98,12 @@
               <Pin Id="JHpvh7GZNAZQXHDvUI66uT" Name="Apply" Kind="InputPin" />
               <Pin Id="JF3gvJrwuDLNk4OkPXQAd7" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="TMhn4mgDa6sOmntuyLgMf8" Comment="Color A" Bounds="305,101,20,15" ShowValueBox="true" isIOBox="true" Value="0.877061, 0.6137577, 0.95000017, 1">
+            <Pad Id="TMhn4mgDa6sOmntuyLgMf8" Comment="Color A" Bounds="305,101,20,15" ShowValueBox="true" isIOBox="true" Value="0.6072971, 0.6262357, 0.9400002, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="CjCLPwp4oO3Le9XWSYvgGY" Comment="Color B" Bounds="325,121,20,15" ShowValueBox="true" isIOBox="true" Value="0.2346005, 0, 0.6900002, 1">
+            <Pad Id="CjCLPwp4oO3Le9XWSYvgGY" Comment="Color B" Bounds="325,121,20,15" ShowValueBox="true" isIOBox="true" Value="0.6159999, 0, 0.70000017, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
@@ -167,6 +167,11 @@
               <Pin Id="JjWq25E1PZDM1teb008efx" Name="Input" Kind="InputPin" />
               <Pin Id="AtzsK3p60VEOdid9CLMcrK" Name="Result" Kind="OutputPin" />
             </Node>
+            <Pad Id="P62RC7g8RiFMvplfsI4SOi" Comment="Center" Bounds="385,390,35,28" ShowValueBox="true" isIOBox="true" Value="0.19, 0">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <Patch Id="LdxtvYgwjUrLTQ2vVWSZ73" Name="Create" />
           <Patch Id="V8WMATKDSswMo4KmJA96ej" Name="Update">
@@ -200,6 +205,7 @@
           <Link Id="GYHFPdBi9XjMY8XjHWQ4WX" Ids="TXAZ6BNYhkfPCoQBBYBftE,JjWq25E1PZDM1teb008efx" />
           <Link Id="HrPEUhIk1JKOYoOWBUE6eZ" Ids="EMeFXsz1HcgLTFmOLEmblb,FbFwUyzdc49LxtJNmAWVPR" />
           <Link Id="GjQGJ2ZOTuwOu4HP9MrNEt" Ids="AtzsK3p60VEOdid9CLMcrK,DuhnHCdkwgfPHQIINepO3g" />
+          <Link Id="TNefFIhMmBALyt8zjOvSUS" Ids="P62RC7g8RiFMvplfsI4SOi,GQ2M367Puw9OjvV1lfdsjJ" />
         </Patch>
       </Node>
     </Canvas>

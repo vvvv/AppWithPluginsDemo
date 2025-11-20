@@ -1307,7 +1307,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
               <Pin Id="BAlbjNGCMRMNhFsVPJPX5j" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="1321, 67, 901, 546" IsHidden="true" />
+              <Pin Id="S1hq9OiKYjWOx7QGIndwVT" Name="Bounds" Kind="InputPin" DefaultValue="1026, 81, 901, 546" IsHidden="true" />
               <Pin Id="VLgIPbVKt2jMXMjyMNL2EW" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="P7EcpXWlPvTPbuRC0V0fFi" Name="Bound to Document" Kind="InputPin" DefaultValue="True" IsHidden="true" />
               <Pin Id="Vr4KFOP0aUyO5middoUmc1" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -1923,7 +1923,7 @@
               <Pin Id="QJqYAKHth5uQILrgxAcM2C" Name="Content Is Visible" Kind="OutputPin" />
               <Patch Id="ICeySIBcvHsLCTD6Ir63w0" ManuallySortedPins="true">
                 <Patch Id="V04bjp3bzsfPmlFdgF3GQ9" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="PwCTO2NXmN2OToq6yetq3H" Name="Update" ParticipatingElements="EpZT6PC8M81PZ82c0KhjDd,BWHlojE3qxcMObFapNwZqW,EVz867khvA0M7AsOprpvo6,GqkQDv0fKD7OAvSXkowloh,SatT2qHSIGPLV0yOW58FHO,DtlOMinh6VgOEjMIKGpMVh,IbZg3BpG83INN203mVVZ2X,KBClJZQSjK7PvWdUP4cnnt,PW6xjPoh93lN7sNBDxXe1y,UbGBo41AdEPOAGRSCZ97UV,PhBFWNHCMNuNuOZ1lx4zXj,G11mTIsGyZmLQr8PtL8lGV,Vy6kyaS1WNROnGjg6dZ19W,JAfwMKno9FvOtSFFYAKM9P" ManuallySortedPins="true" />
+                <Patch Id="PwCTO2NXmN2OToq6yetq3H" Name="Update" ParticipatingElements="EpZT6PC8M81PZ82c0KhjDd,BWHlojE3qxcMObFapNwZqW,EVz867khvA0M7AsOprpvo6,GqkQDv0fKD7OAvSXkowloh,SatT2qHSIGPLV0yOW58FHO,DtlOMinh6VgOEjMIKGpMVh,IbZg3BpG83INN203mVVZ2X,KBClJZQSjK7PvWdUP4cnnt,PW6xjPoh93lN7sNBDxXe1y,UbGBo41AdEPOAGRSCZ97UV,PhBFWNHCMNuNuOZ1lx4zXj,G11mTIsGyZmLQr8PtL8lGV,Vy6kyaS1WNROnGjg6dZ19W,JAfwMKno9FvOtSFFYAKM9P,TxcQmSlV3jCNn2ekc8uYPS" ManuallySortedPins="true" />
                 <Patch Id="NDbzmnSW31FLapsLh5aBuF" Name="Dispose" ManuallySortedPins="true" />
                 <Node Bounds="1126,827,82,19" Id="J9fzBwZehFxOY7O0tDdhnj">
                   <p:NodeReference LastCategoryFullName="Main" LastDependency="host.vl">
@@ -2277,7 +2277,7 @@
                   <Pin Id="Ty3BvcDPPCSNKMDigVMCgc" Name="Input" Kind="InputPin" />
                   <Pin Id="VpDFfitbQpjLxZvbmu81IG" Name="Output" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1206,740,285,19" Id="FblmkG6ejgSPxHHOvvpbRH">
+                <Node Bounds="1206,750,285,19" Id="FblmkG6ejgSPxHHOvvpbRH">
                   <p:NodeReference LastCategoryFullName="Stride.Cameras" LastDependency="VL.Stride.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="OrbitCamera" />
@@ -2331,6 +2331,11 @@
                   <Pin Id="IoB5zZ78pPWMBcWVxMipPs" Name="Z" Kind="InputPin" />
                   <Pin Id="PynKYZHcSW8OUScaRjByVf" Name="Output" Kind="StateOutputPin" />
                 </Node>
+                <Pad Id="Kwq3XaUaLTTPJhgYLRjqo3" Comment="Initial Interest" Bounds="1248,703,35,43" ShowValueBox="true" isIOBox="true" Value="1.22, 0, 0">
+                  <p:TypeAnnotation LastCategoryFullName="3D" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Vector3" />
+                  </p:TypeAnnotation>
+                </Pad>
               </Patch>
             </Node>
             <Node Bounds="1571,520,59,19" Id="AAQEZgCnLQaPdXJxxQ0D5M">
@@ -2867,6 +2872,7 @@
           <Link Id="H60Dcbk9RjUMOyB5pdiPmx" Ids="PynKYZHcSW8OUScaRjByVf,Ebcpgl2z9sFMcWD3tBOpzj" />
           <Link Id="BxbCQYbT0aSO6Y8tMfhhqn" Ids="LDldrY9WAQKLa66ZGW0yIj,VGpKjJuZP26MrfTy5A7BPa" />
           <Link Id="UvadopGqeJvL5ZfndOqxMU" Ids="Naon0rP1QGnNGFs0LKRpkf,OLPJwyLKYqdOlsn4u3f67A" />
+          <Link Id="TxcQmSlV3jCNn2ekc8uYPS" Ids="Kwq3XaUaLTTPJhgYLRjqo3,QGfMQf41j0uOC0gfjAO7j8" />
         </Patch>
       </Node>
       <!--

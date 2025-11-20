@@ -12,4 +12,10 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationIcon>$(MsBuildThisFileDirectory)DemoApp.ico</ApplicationIcon>
   </PropertyGroup>
+  <Target Name="CopyFiles" AfterTargets="Publish">
+	<ItemGroup>
+		<Icon Include="$(ApplicationIcon)" />
+	</ItemGroup>
+	<Copy SourceFiles="@(Icon)" DestinationFolder="$(VLExportPath)\DemoApp\" />
+  </Target>
 </Project>
