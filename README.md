@@ -1,6 +1,8 @@
 # AppWithPluginsDemo
 Demonstrates how to build an application using vvvv that can load binary plugins (dlls) that were also exported from vvvv.  
 
+![](https://raw.githubusercontent.com/vvvv/AppWithPluginsDemo/main/.github/images/app.png)
+
 Requires vvvv gamma > 7.1 preview 103
 
 ## Introduction
