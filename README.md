@@ -1,5 +1,7 @@
-# PluginHostDemo
+# AppWithPluginsDemo
 Demonstrates how to build an application using vvvv that can load binary plugins (dlls) that were also exported from vvvv.  
+
+Requires vvvv gamma > 7.1 preview 103
 
 ## Introduction
 The application in this repository is demoing a most simplistic but fully working example:
@@ -19,7 +21,7 @@ For each of those types of plugins the app shows a drop-down that lists all the 
 - The main application: `DemoApp.vl` references `DemoApp.Host`. This is what is being exported to deploy the app.
 - A separate document for developing plugins: `PluginDev.vl`. The same as above but: Also references any plugin .vl documents directly to work on them. This file is a development file only, ie. not intended to use for exporting `DemoApp`.
 - The host package `DemoApp.Host` must not be referenced by plugins. In this example it will show a combo box to select the plugin which should run.
-- Plugin interfaces are contained in `DemoApp.Plugin.Layer`, `DemoApp.Plugin.TexFX`, `DemoApp.Plugin.Audio`
+- Plugin interfaces are contained in `DemoApp.PluginInterface.Layer`, `DemoApp.PluginInterface.TexFX`, `DemoApp.PluginInterface.Audio`
 
 The `\plugins` folder with example plugins:
 - `pluginA`, `pluginB` contain Skia Layer plugins
@@ -30,14 +32,16 @@ The `\plugins` folder with example plugins:
 
 ## Running the demo
 ### Prepare
-- Run vvvv with [package-repositories](https://thegraybook.vvvv.org/reference/extending/contributing.html#source-package-repositories) pointing to the `\core` folder which will load all packages inside that folder as source packages: `vvvv.exe --package-repositories MY_REPOS\VL.PluginHostDemo\core`
+- Run vvvv with [package-repositories](https://thegraybook.vvvv.org/reference/extending/contributing.html#source-package-repositories) pointing to the `\core` folder which will load all packages inside that folder as source packages: `vvvv.exe --package-repositories MY_REPOS\AppWithPluginsDemo\core`
 - Export `DemoApp.vl`
-  - Notice how it is set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp`
+  - Notice how it is set-up to export into `MY_REPOS\AppWithPluginsDemo\exported\DemoApp`
 - Open the individual plugins from the `\plugins` folder and export them 
-  - Notice how they are set-up to export into `MY_REPOS\VL.PluginHostDemo\exported\DemoApp\plugins`
+  - Notice how they are set-up to export into `MY_REPOS\AppWithPluginsDemo\exported\DemoApp\plugins`
   - Notice how `TexFXWithAssets` includes a .targets file that makes sure the assets folder is also copied over
 ### Run
 - When running the exported `DemoApp`, it will look for a `plugins` folder next to itself and search for plugin dlls inside that folder
+### Developing plugins
+- Open "PluginDev.vl", reference the plugin you want to work on and operate on it live
 
 Sidenote: Check the [vvvv commandline compiler](https://thegraybook.vvvv.org/reference/hde/exporting.html#the-commandline-compiler) to automate deployment of the app and plugins.
 
@@ -82,5 +86,5 @@ build EditorAndPackages
 Compile DemoApp.vl with
 ```
 cd bin\win-x64\vvvv_gamma_MY_VERSION
-vvvvc MY_REPOS\VL.PluginHostDemo\DemoApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
+vvvvc MY_REPOS\AppWithPluginsDemo\DemoApp.vl --export-package-sources MY_REPOS\vvvv\bin\win-x64\packages
 ```
