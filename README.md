@@ -79,6 +79,9 @@ Imagine being able to develop plugins directly in the host app by opening a VL e
 ## Related Discussions
 This is a modified version as was previously outlined [in the forum](http://forum.vvvv.org/t/export-and-load-dlls-from-gamma/22278/4).
 
+## Credits
+For the sponsoring of this development we bow to [spacemusic.com](http://spacemusic.com) and [hansen.ch](http://hansen.ch).
+
 ## Instructions for vvvv dev build (for devvvvs only)
 Compile vvvv itself with
 ```
