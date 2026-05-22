@@ -3,7 +3,7 @@ Demonstrates how to build an application using vvvv that can load binary plugins
 
 ![](https://raw.githubusercontent.com/vvvv/AppWithPluginsDemo/main/.github/images/app.png)
 
-Requires vvvv gamma > 7.1 preview 103
+Requires vvvv gamma > 7.1
 
 ## Introduction
 The application in this repository is demoing a most simplistic but fully working example:
